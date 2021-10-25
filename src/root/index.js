@@ -1,10 +1,13 @@
 import React from "react";
+import { GlobalStyle } from "../globalStyle/GlobalStyle";
+import Router from "../routing";
 
 const Root = () => {
   return (
-    <div>
-      <h1>portfolio</h1>
-    </div>
+    <>
+      <GlobalStyle />
+      <Router />
+    </>
   );
 };
 
