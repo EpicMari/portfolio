@@ -1,4 +1,10 @@
 import { Link } from "react-router-dom";
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 
-export const StyledLink = styled(Link)``;
+export const StyledLink = styled(Link)`
+  ${({ headLink }) =>
+    headLink &&
+    css`
+      color: ${({ theme }) => theme.colors.white};
+    `}
+`;

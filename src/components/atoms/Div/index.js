@@ -4,16 +4,22 @@ import { StyledDiv } from "./StyledDiv";
 const Div = ({
   children,
   className,
-  navMobile,
-  navMobile__container,
-  navMobile__menu,
+  nav__wrapper,
+  nav__menu,
+  nav__content,
+  buttonMenu,
+  navDesktop,
+  navDesktop__content,
 }) => {
   return (
     <StyledDiv
       className={className}
-      navMobile={navMobile}
-      navMobile__container={navMobile__container}
-      navMobile__menu={navMobile__menu}
+      nav__wrapper={nav__wrapper}
+      nav__menu={nav__menu}
+      nav__content={nav__content}
+      buttonMenu={buttonMenu}
+      navDesktop={navDesktop}
+      navDesktop__content={navDesktop__content}
     >
       {children}
     </StyledDiv>

@@ -1,7 +1,7 @@
 import React from "react";
 import { H1, H2, H3, H4, H5, H6 } from "./StyledHeading";
 
-const Heading = ({ children, headingType }) => {
+const Heading = ({ children, headingType, headLogo }) => {
   const _renderHeading = () => {
     switch (headingType) {
       case "h1":
@@ -9,7 +9,7 @@ const Heading = ({ children, headingType }) => {
       case "h2":
         return <H2>{children}</H2>;
       case "h3":
-        return <H3>{children}</H3>;
+        return <H3 headLogo={headLogo}>{children}</H3>;
       case "h4":
         return <H4>{children}</H4>;
       case "h5":
