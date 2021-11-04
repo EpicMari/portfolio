@@ -1,11 +1,15 @@
 import { createGlobalStyle } from "styled-components";
 
 export const GlobalStyle = createGlobalStyle`
-html {
+  html {
     box-sizing: border-box;
   }
   
-  *, *::after, *::before {
+  body {
+    background-color: ${({ theme }) => theme.colors.blackGrey};
+  }
+
+  *, *::after, *::before {  
     box-sizing: inherit;
   }
   
@@ -27,5 +31,9 @@ html {
   }
   a {
     text-decoration: none;
+  }
+
+  h1, h2, h3, h4, h5, h6, p, a {
+    color: ${({ theme }) => theme.colors.white}
   }
 `;

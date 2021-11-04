@@ -7,6 +7,7 @@ export const themes = {
     greyTransparent: "rgba(29, 29, 31, 0.7)",
   },
   fontSize: {
+    xxxl: "42px",
     xxl: "34px",
     xl: "24px",
     l: "17px",
@@ -18,13 +19,19 @@ export const themes = {
       l: "86px",
       m: "78px",
       s: "70px",
+      xs: "62px",
+      xxs: "56px",
     },
   },
   devices: {
     tablet: "481px",
     laptop: "769px",
     desktop: "1025px",
-    bigScreen: "1201px",
+    desktopS: "1201px",
+    desktopM: "1401px",
+    desktopL: "1601px",
+    desktopXl: "1801px",
+    screenFullHd: "1920px",
   },
   fontWeights: {
     regular: 400,
