@@ -10,6 +10,9 @@ const Div = ({
   buttonMenu,
   navDesktop,
   navDesktop__content,
+  sectionMe__wrapper,
+  sectionMe__img,
+  scrollBalls,
 }) => {
   return (
     <StyledDiv
@@ -20,6 +23,9 @@ const Div = ({
       buttonMenu={buttonMenu}
       navDesktop={navDesktop}
       navDesktop__content={navDesktop__content}
+      sectionMe__wrapper={sectionMe__wrapper}
+      sectionMe__img={sectionMe__img}
+      scrollBalls={scrollBalls}
     >
       {children}
     </StyledDiv>

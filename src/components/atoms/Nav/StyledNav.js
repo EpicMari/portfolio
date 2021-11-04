@@ -8,7 +8,6 @@ export const StyledNav = styled.nav`
   top: 0;
   right: 0;
   left: 0;
-  /* padding-top: 10px;
-  padding-bottom: 10px; */
+  border-bottom: 1px solid #3d3d3d;
   backdrop-filter: saturate(180%) blur(20px);
 `;

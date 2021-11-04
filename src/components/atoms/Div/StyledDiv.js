@@ -13,6 +13,9 @@ export const StyledDiv = styled.div`
     padding: 0 20px;
   }
 
+  &.container {
+  }
+
   ${({ nav__wrapper }) =>
     nav__wrapper &&
     css`
@@ -79,5 +82,107 @@ export const StyledDiv = styled.div`
       @media (min-width: ${({ theme }) => theme.devices.laptop}) {
         display: none;
       }
+    `}
+
+    ${({ sectionMe__wrapper }) =>
+    sectionMe__wrapper &&
+    css`
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      min-height: 100vh;
+      padding: 110px 0 20px;
+      margin: 0 20px;
+    `}
+
+    ${({ scrollBalls }) =>
+    scrollBalls &&
+    css`
+      position: relative;
+      width: 10px;
+      height: 60px;
+      margin: 0 auto;
+
+      & .scrollBalls__1,
+      & .scrollBalls__2,
+      & .scrollBalls__3 {
+        position: absolute;
+        border-radius: 50%;
+        height: 10px;
+        width: 10px;
+        background-color: ${({ theme }) => theme.colors.white};
+        animation-name: ball1;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease;
+      }
+
+      & .scrollBalls__2 {
+        animation-name: ball2;
+      }
+
+      & .scrollBalls__3 {
+        animation-name: ball3;
+      }
+
+      @keyframes ball1 {
+        0% {
+          opacity: 0;
+        }
+        10% {
+          opacity: 1;
+        }
+        40%,
+        100% {
+          opacity: 1;
+          transform: translateY(50px);
+        }
+      }
+      @keyframes ball2 {
+        0% {
+          opacity: 0;
+        }
+        10% {
+          opacity: 0.6;
+        }
+        60% {
+          transform: translateY(50px);
+          opacity: 0.6;
+        }
+        61% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 0;
+        }
+      }
+      @keyframes ball3 {
+        0% {
+          opacity: 0;
+        }
+        10% {
+          opacity: 0.3;
+        }
+        90% {
+          transform: translateY(50px);
+          opacity: 0.3;
+        }
+        91% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 0;
+        }
+      }
+    `}
+
+    ${({ sectionMe__img }) =>
+    sectionMe__img &&
+    css`
+      width: 324px;
+      height: 324px;
+      border-radius: 50%;
+      margin-bottom: 40px;
     `}
 `;
