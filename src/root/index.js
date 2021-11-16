@@ -4,6 +4,7 @@ import { GlobalStyle } from "../globalStyle/GlobalStyle";
 import { themes } from "../themes/themes";
 import NavigationTemplate from "../templates/NavigationTemplate";
 import Home from "../views/Home";
+import About from "../views/About";
 
 const Root = () => {
   return (
@@ -11,6 +12,7 @@ const Root = () => {
       <GlobalStyle />
       <NavigationTemplate>
         <Home />
+        <About />
       </NavigationTemplate>
     </ThemeProvider>
   );

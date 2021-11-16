@@ -1,8 +1,8 @@
 import React from "react";
-import AboutMeText from "../../molecules/AboutMeText";
+import AboutMe from "../../molecules/AboutMe";
 
 const AboutContent = () => {
-  return <AboutMeText />;
+  return <AboutMe />;
 };
 
 export default AboutContent;

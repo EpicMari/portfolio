@@ -1,7 +1,13 @@
 import React from "react";
+import Div from "../components/atoms/Div";
+import AboutContent from "../components/organisms/AboutContent";
 
 const About = () => {
-  return <div></div>;
+  return (
+    <Div className="viewsWrapper">
+      <AboutContent />
+    </Div>
+  );
 };
 
 export default About;

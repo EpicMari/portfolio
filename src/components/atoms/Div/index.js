@@ -13,6 +13,9 @@ const Div = ({
   sectionMe__wrapper,
   sectionMe__img,
   scrollBalls,
+  aboutMeText__wrapper,
+  aboutMeText__text,
+  aboutMeText__slider,
 }) => {
   return (
     <StyledDiv
@@ -26,6 +29,9 @@ const Div = ({
       sectionMe__wrapper={sectionMe__wrapper}
       sectionMe__img={sectionMe__img}
       scrollBalls={scrollBalls}
+      aboutMeText__wrapper={aboutMeText__wrapper}
+      aboutMeText__text={aboutMeText__text}
+      aboutMeText__slider={aboutMeText__slider}
     >
       {children}
     </StyledDiv>

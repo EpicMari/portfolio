@@ -30,4 +30,22 @@ export const StyledParagraph = styled.p`
         }
       }
     `}
+
+  ${({ aboutMeText__description }) =>
+    aboutMeText__description &&
+    css`
+      font-size: 1.5em;
+
+      @media (min-width: ${({ theme }) => theme.devices.laptop}) {
+        font-size: 2.3vw;
+      }
+
+      &:last-child {
+        margin-top: 40px;
+      }
+
+      @media (min-width: ${({ theme }) => theme.devices.desktop}) {
+        width: 70%;
+      }
+    `}
 `;

@@ -7,6 +7,7 @@ const Heading = ({
   headLogo,
   sectionMe__name,
   sectionMe__jobPosition,
+  aboutMeText__heading,
 }) => {
   const _renderHeading = () => {
     switch (headingType) {
@@ -15,7 +16,14 @@ const Heading = ({
           <H1 sectionMe__jobPosition={sectionMe__jobPosition}>{children}</H1>
         );
       case "h2":
-        return <H2 sectionMe__name={sectionMe__name}>{children}</H2>;
+        return (
+          <H2
+            sectionMe__name={sectionMe__name}
+            aboutMeText__heading={aboutMeText__heading}
+          >
+            {children}
+          </H2>
+        );
       case "h3":
         return <H3 headLogo={headLogo}>{children}</H3>;
       case "h4":

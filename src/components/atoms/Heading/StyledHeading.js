@@ -38,6 +38,24 @@ export const H2 = styled.h2`
     css`
       margin-bottom: 20px;
     `}
+
+  ${({ aboutMeText__heading }) =>
+    aboutMeText__heading &&
+    css`
+      text-transform: uppercase;
+      font-size: 2em;
+      margin: 20px 0;
+
+      @media (min-width: ${({ theme }) => theme.devices.laptop}) {
+        font-size: 3.5vw;
+      }
+
+      @media (min-width: ${({ theme }) => theme.devices.desktop}) {
+        grid-area: 1 / 2;
+        transform: rotate(-90deg);
+        margin: 0;
+      }
+    `}
 `;
 export const H3 = styled.h3`
   ${({ headLogo }) =>

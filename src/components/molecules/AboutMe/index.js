@@ -9,35 +9,37 @@ import "react-awesome-slider/dist/styles.css";
 
 const AutoplaySlider = withAutoplay(AwesomeSlider);
 
-const AboutMeText = () => {
+const AboutMe = () => {
   return (
     <Div aboutMeText__wrapper>
+      <Heading headingType="h2" aboutMeText__heading>
+        about me
+      </Heading>
       <Div aboutMeText__text>
-        <Heading headingType="h2" aboutMeText__heading>
-          about me
-        </Heading>
-        <Paragraph>
+        <Paragraph aboutMeText__description>
           25 years old, based in Katowice, in love hip hop, automotive, mountain
           bike and hiking.
         </Paragraph>
-        <Paragraph>
+        <Paragraph aboutMeText__description>
           Self-taught, at the beginning of my career, looking for new challenges
           and experiences, open to gaining new knowledge.
         </Paragraph>
       </Div>
-      <AutoplaySlider
-        play={true}
-        cancelOnInteraction={false}
-        interval={5000}
-        bullets={false}
-      >
-        <div data-src="/path/to/image-0.jpg" />
-        <div data-src="/path/to/image-1.jpg" />
-        <div data-src="/path/to/image-2.jpg" />
-        <div data-src="/path/to/image-3.jpg" />
-      </AutoplaySlider>
+      <Div aboutMeText__slider>
+        <AutoplaySlider
+          play={true}
+          cancelOnInteraction={false}
+          interval={5000}
+          bullets={false}
+        >
+          <div data-src="/path/to/image-0.jpg" />
+          <div data-src="/path/to/image-1.jpg" />
+          <div data-src="/path/to/image-2.jpg" />
+          <div data-src="/path/to/image-3.jpg" />
+        </AutoplaySlider>
+      </Div>
     </Div>
   );
 };
 
-export default AboutMeText;
+export default AboutMe;
