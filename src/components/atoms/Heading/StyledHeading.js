@@ -56,6 +56,13 @@ export const H2 = styled.h2`
         margin: 0;
       }
     `}
+
+    ${({ sectionProjects__headingTitleSection }) =>
+    sectionProjects__headingTitleSection &&
+    css`
+      text-align: left;
+      font-size: 2.5em;
+    `}
 `;
 export const H3 = styled.h3`
   ${({ headLogo }) =>

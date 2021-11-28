@@ -222,4 +222,76 @@ export const StyledDiv = styled.div`
         grid-area: 1 / 3;
       }
     `}
+
+    ${({ projectsViews__wrapper }) =>
+    projectsViews__wrapper &&
+    css`
+      height: 300vh;
+    `}
+
+    ${({ sectionProjects }) =>
+    sectionProjects &&
+    css`
+      position: sticky;
+      top: 0;
+      z-index: 1;
+    `}
+
+    ${({ sectionProjects__wrapper }) =>
+    sectionProjects__wrapper &&
+    css`
+      overflow: hidden;
+      height: 100vh;
+      background-color: ${({ theme }) => theme.colors.black};
+      padding: 80px 0;
+    `}
+
+    ${({ sectionProjects__container }) =>
+    sectionProjects__container &&
+    css`
+      position: relative;
+      display: flex;
+      height: 100%;
+      flex-direction: column;
+      align-items: center;
+      width: 90%;
+      max-width: 1000px;
+      margin: 0 auto;
+    `}
+
+    ${({ sectionProjects__sectionTitle }) =>
+    sectionProjects__sectionTitle &&
+    css`
+      position: absolute;
+      width: 100%;
+      max-width: 1000px;
+    `}
+
+    ${({ sectionProjects__projectsCards }) =>
+    sectionProjects__projectsCards &&
+    css`
+      position: relative;
+      display: flex;
+      height: 100%;
+      width: 100%;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    `}
+
+    ${({ sectionProjects__projectsCard }) =>
+    sectionProjects__projectsCard &&
+    css`
+      position: absolute;
+      height: 300px;
+      width: 100%;
+      padding: 10%;
+      background-color: ${({ theme }) => theme.colors.blackGrey};
+      border: 1px solid hsla(0, 0%, 51.4%, 0.16);
+
+      &.card {
+        border-radius: 50px;
+        height: 380px;
+      }
+    `}
 `;

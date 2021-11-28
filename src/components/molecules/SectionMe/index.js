@@ -3,12 +3,14 @@ import Div from "../../atoms/Div";
 import Heading from "../../atoms/Heading";
 import Img from "../../atoms/Img";
 import Martin from "../../../assets/Martin.jpg";
+import img2 from "../../../assets/cvvvvvvv.jpg";
+import img3 from "../../../assets/cvvv1.jpg";
 
 const SectionMe = () => {
   return (
     <Div sectionMe__wrapper>
       <Div sectionMe__img>
-        <Img src={Martin} alt="Martin Reinicke" meImg />
+        <Img src={img2} alt="Martin Reinicke" meImg />
       </Div>
       <Div sectionMe__content>
         <Heading headingType="h2" sectionMe__name>

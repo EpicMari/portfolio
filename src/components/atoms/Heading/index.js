@@ -8,6 +8,7 @@ const Heading = ({
   sectionMe__name,
   sectionMe__jobPosition,
   aboutMeText__heading,
+  sectionProjects__headingTitleSection,
 }) => {
   const _renderHeading = () => {
     switch (headingType) {
@@ -20,6 +21,9 @@ const Heading = ({
           <H2
             sectionMe__name={sectionMe__name}
             aboutMeText__heading={aboutMeText__heading}
+            sectionProjects__headingTitleSection={
+              sectionProjects__headingTitleSection
+            }
           >
             {children}
           </H2>

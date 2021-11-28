@@ -5,6 +5,7 @@ import { themes } from "../themes/themes";
 import NavigationTemplate from "../templates/NavigationTemplate";
 import Home from "../views/Home";
 import About from "../views/About";
+import Projects from "../views/Projects";
 
 const Root = () => {
   return (
@@ -13,6 +14,7 @@ const Root = () => {
       <NavigationTemplate>
         <Home />
         <About />
+        <Projects />
       </NavigationTemplate>
     </ThemeProvider>
   );
