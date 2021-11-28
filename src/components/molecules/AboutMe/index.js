@@ -11,7 +11,7 @@ const AutoplaySlider = withAutoplay(AwesomeSlider);
 
 const AboutMe = () => {
   return (
-    <Div aboutMeText__wrapper>
+    <Div aboutMeText>
       <Heading headingType="h2" aboutMeText__heading>
         about me
       </Heading>

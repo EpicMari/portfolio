@@ -11,7 +11,7 @@ const NavMobile = () => {
     setMenuOnOff(!menuOnOff);
   };
   return (
-    <Div nav__wrapper className="navWrapper">
+    <Div nav className="navWrapper">
       <Div className="nav__box">
         <NavLogo />
         <Div buttonMenu>

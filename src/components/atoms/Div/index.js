@@ -6,16 +6,16 @@ const Div = ({
   className,
   style,
   onScroll,
-  nav__wrapper,
+  nav,
   nav__menu,
   nav__content,
   buttonMenu,
   navDesktop,
   navDesktop__content,
-  sectionMe__wrapper,
+  sectionMe,
   sectionMe__img,
   scrollBalls,
-  aboutMeText__wrapper,
+  aboutMeText,
   aboutMeText__text,
   aboutMeText__slider,
   projectsViews__wrapper,
@@ -31,16 +31,16 @@ const Div = ({
       className={className}
       style={style}
       onScroll={onScroll}
-      nav__wrapper={nav__wrapper}
+      nav={nav}
       nav__menu={nav__menu}
       nav__content={nav__content}
       buttonMenu={buttonMenu}
       navDesktop={navDesktop}
       navDesktop__content={navDesktop__content}
-      sectionMe__wrapper={sectionMe__wrapper}
+      sectionMe={sectionMe}
       sectionMe__img={sectionMe__img}
       scrollBalls={scrollBalls}
-      aboutMeText__wrapper={aboutMeText__wrapper}
+      aboutMeText={aboutMeText}
       aboutMeText__text={aboutMeText__text}
       aboutMeText__slider={aboutMeText__slider}
       projectsViews__wrapper={projectsViews__wrapper}

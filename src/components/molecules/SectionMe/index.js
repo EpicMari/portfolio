@@ -8,7 +8,7 @@ import img3 from "../../../assets/cvvv1.jpg";
 
 const SectionMe = () => {
   return (
-    <Div sectionMe__wrapper>
+    <Div sectionMe>
       <Div sectionMe__img>
         <Img src={img2} alt="Martin Reinicke" meImg />
       </Div>

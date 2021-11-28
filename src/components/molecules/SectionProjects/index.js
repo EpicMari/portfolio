@@ -159,7 +159,7 @@ const SectionProjects = () => {
     transition: "transform 0.3s ease-out, opacity 0.3s ease-out",
   };
   return (
-    <Div sectionProjects className>
+    <Div sectionProjects>
       <Div sectionProjects__wrapper>
         <Div sectionProjects__container>
           <Div sectionProjects__sectionTitle>

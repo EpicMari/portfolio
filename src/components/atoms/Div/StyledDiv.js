@@ -18,8 +18,8 @@ export const StyledDiv = styled.div`
     padding-top: 40px;
   }
 
-  ${({ nav__wrapper }) =>
-    nav__wrapper &&
+  ${({ nav }) =>
+    nav &&
     css`
       @media (min-width: ${({ theme }) => theme.devices.laptop}) {
         display: none;
@@ -86,8 +86,8 @@ export const StyledDiv = styled.div`
       }
     `}
 
-    ${({ sectionMe__wrapper }) =>
-    sectionMe__wrapper &&
+    ${({ sectionMe }) =>
+    sectionMe &&
     css`
       display: flex;
       flex-direction: column;
@@ -188,8 +188,8 @@ export const StyledDiv = styled.div`
       margin-bottom: 40px;
     `}
 
-    ${({ aboutMeText__wrapper }) =>
-    aboutMeText__wrapper &&
+    ${({ aboutMeText }) =>
+    aboutMeText &&
     css`
       display: grid;
       grid-template-rows: 0.2fr auto 0.8fr;
