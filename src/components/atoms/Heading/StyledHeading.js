@@ -33,6 +33,19 @@ export const H1 = styled.h1`
 `;
 export const H2 = styled.h2`
   text-align: center;
+
+  ${({ sectionHeader }) =>
+    sectionHeader &&
+    css`
+      text-transform: uppercase;
+      font-size: 2em;
+      margin: 20px 0;
+
+      @media (min-width: ${({ theme }) => theme.devices.laptop}) {
+        font-size: 3.5vw;
+      }
+    `}
+
   ${({ sectionMe__name }) =>
     sectionMe__name &&
     css`
@@ -42,14 +55,6 @@ export const H2 = styled.h2`
   ${({ aboutMeText__heading }) =>
     aboutMeText__heading &&
     css`
-      text-transform: uppercase;
-      font-size: 2em;
-      margin: 20px 0;
-
-      @media (min-width: ${({ theme }) => theme.devices.laptop}) {
-        font-size: 3.5vw;
-      }
-
       @media (min-width: ${({ theme }) => theme.devices.desktop}) {
         grid-area: 1 / 2;
         transform: rotate(-90deg);
@@ -62,6 +67,19 @@ export const H2 = styled.h2`
     css`
       text-align: left;
       font-size: 2.5em;
+    `}
+
+    ${({ technologies__heading }) =>
+    technologies__heading &&
+    css`
+      width: 100%;
+      padding: 0 20px;
+      margin: 0 0 60px;
+      grid-area: 1 / 1 / 1 / 4;
+
+      @media (min-width: ${({ theme }) => theme.devices.desktopL}) {
+        margin: 0 0 100px;
+      }
     `}
 `;
 export const H3 = styled.h3`

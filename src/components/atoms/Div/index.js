@@ -25,6 +25,10 @@ const Div = ({
   sectionProjects__sectionTitle,
   sectionProjects__projectsCards,
   sectionProjects__projectsCard,
+  technologies,
+  technologies__line,
+
+  technologies__card,
 }) => {
   return (
     <StyledDiv
@@ -50,6 +54,9 @@ const Div = ({
       sectionProjects__sectionTitle={sectionProjects__sectionTitle}
       sectionProjects__projectsCards={sectionProjects__projectsCards}
       sectionProjects__projectsCard={sectionProjects__projectsCard}
+      technologies={technologies}
+      technologies__line={technologies__line}
+      technologies__card={technologies__card}
     >
       {children}
     </StyledDiv>

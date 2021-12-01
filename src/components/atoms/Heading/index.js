@@ -3,12 +3,15 @@ import { H1, H2, H3, H4, H5, H6 } from "./StyledHeading";
 
 const Heading = ({
   children,
+  className,
   headingType,
   headLogo,
   sectionMe__name,
   sectionMe__jobPosition,
   aboutMeText__heading,
   sectionProjects__headingTitleSection,
+  technologies__heading,
+  sectionHeader,
 }) => {
   const _renderHeading = () => {
     switch (headingType) {
@@ -19,11 +22,14 @@ const Heading = ({
       case "h2":
         return (
           <H2
+            className={className}
             sectionMe__name={sectionMe__name}
             aboutMeText__heading={aboutMeText__heading}
             sectionProjects__headingTitleSection={
               sectionProjects__headingTitleSection
             }
+            technologies__heading={technologies__heading}
+            sectionHeader={sectionHeader}
           >
             {children}
           </H2>
