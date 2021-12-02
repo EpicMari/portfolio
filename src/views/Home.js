@@ -4,7 +4,7 @@ import HomeContent from "../components/organisms/HomeContent";
 
 const Home = () => {
   return (
-    <Div className="viewsWrapper">
+    <Div className="viewsWrapper" id="home">
       <HomeContent />
     </Div>
   );

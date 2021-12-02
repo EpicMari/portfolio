@@ -4,7 +4,7 @@ import ProjectsContent from "../components/organisms/ProjectsContent";
 
 const Projects = () => {
   return (
-    <Div projectsViews__wrapper className="projects">
+    <Div projectsViews__wrapper className="projects" id="projects">
       <ProjectsContent />
     </Div>
   );

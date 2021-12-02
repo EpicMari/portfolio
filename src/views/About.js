@@ -4,7 +4,7 @@ import AboutContent from "../components/organisms/AboutContent";
 
 const About = () => {
   return (
-    <Div className="viewsWrapper">
+    <Div className="viewsWrapper" id="about">
       <AboutContent />
     </Div>
   );

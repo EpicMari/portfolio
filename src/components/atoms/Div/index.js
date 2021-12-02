@@ -3,6 +3,7 @@ import { StyledDiv } from "./StyledDiv";
 
 const Div = ({
   children,
+  id,
   className,
   style,
   onScroll,
@@ -32,6 +33,7 @@ const Div = ({
 }) => {
   return (
     <StyledDiv
+      id={id}
       className={className}
       style={style}
       onScroll={onScroll}
