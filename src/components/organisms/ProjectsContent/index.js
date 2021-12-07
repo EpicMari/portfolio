@@ -5,7 +5,7 @@ import Technologies from "../../molecules/Technologies";
 const ProjectsContent = () => {
   return (
     <>
-      {/* <SectionProjects />; */}
+      <SectionProjects />
       <Technologies />
     </>
   );

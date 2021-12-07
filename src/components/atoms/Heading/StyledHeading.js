@@ -89,6 +89,30 @@ export const H3 = styled.h3`
       font-size: ${({ theme }) => theme.fontSize.l};
       padding: 10px 10px;
     `}
+
+  ${({ footerText__heading }) =>
+    footerText__heading &&
+    css`
+      text-align: center;
+      margin-bottom: 5%;
+      font-size: 10vw;
+
+      @media (min-width: ${({ theme }) => theme.devices.tablet}) {
+        font-size: 8vw;
+      }
+
+      @media (min-width: ${({ theme }) => theme.devices.desktopS}) {
+        font-size: 6vw;
+      }
+
+      @media (min-width: ${({ theme }) => theme.devices.desktopL}) {
+        font-size: 4vw;
+      }
+
+      @media (min-width: ${({ theme }) => theme.devices.desktopXl}) {
+        margin-bottom: 3%;
+      }
+    `}
 `;
 export const H4 = styled.h4``;
 export const H5 = styled.h5``;

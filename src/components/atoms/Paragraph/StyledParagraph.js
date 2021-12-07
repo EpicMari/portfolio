@@ -48,4 +48,59 @@ export const StyledParagraph = styled.p`
         width: 70%;
       }
     `}
+
+    ${({ footerText__link }) =>
+    footerText__link &&
+    css`
+      font-size: ${({ theme }) => theme.fontSize.xl};
+      display: inline-block;
+      padding: 10px 20px;
+      position: relative;
+      &::after {
+        position: absolute;
+        content: "";
+        top: 90%;
+        left: 0;
+        width: 100%;
+        height: 1.5px;
+        background: ${({ theme }) => theme.colors.white};
+        transform: scaleX(0);
+        transform-origin: center;
+        transition: transform 0.5s;
+      }
+
+      &:hover::after {
+        transform: scaleX(1);
+        transform-origin: center;
+      }
+
+      @media (min-width: ${({ theme }) => theme.devices.desktop}) {
+        font-size: ${({ theme }) => theme.fontSize.xxl};
+      }
+    `}
+
+    ${({ footerLink__link }) =>
+    footerLink__link &&
+    css`
+      text-align: center;
+      padding: 10px 15px;
+      opacity: 0.7;
+      transition: opacity 0.3s;
+
+      &:hover {
+        opacity: 1;
+      }
+    `}
+
+    ${({ footerLink__me }) =>
+    footerLink__me &&
+    css`
+      text-transform: uppercase;
+      margin-top: 10px;
+      opacity: 0.7;
+
+      @media (min-width: ${({ theme }) => theme.devices.laptop}) {
+        margin-top: 0;
+      }
+    `}
 `;

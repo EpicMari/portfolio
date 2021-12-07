@@ -12,6 +12,7 @@ const Heading = ({
   sectionProjects__headingTitleSection,
   technologies__heading,
   sectionHeader,
+  footerText__heading,
 }) => {
   const _renderHeading = () => {
     switch (headingType) {
@@ -35,7 +36,11 @@ const Heading = ({
           </H2>
         );
       case "h3":
-        return <H3 headLogo={headLogo}>{children}</H3>;
+        return (
+          <H3 headLogo={headLogo} footerText__heading={footerText__heading}>
+            {children}
+          </H3>
+        );
       case "h4":
         return <H4>{children}</H4>;
       case "h5":

@@ -14,19 +14,7 @@ const SectionProjects = () => {
     const cardThree = document.querySelector(".card3");
     const cardFour = document.querySelector(".card4");
     const wrapperTop = wrapper.offsetTop;
-    // document.addEventListener("scroll", () => {
-    //   console.log(wrapperTop, "tutaj");
-    //   console.log(window.scrollY, "sh");
-    //   const scrollY = Math.floor(parseInt(window.scrollY));
-    //   if (scrollY > 1500 && scrollY < 1600) {
-    //     cardOne.style.opacity = 0.3;
-    //   } else if (scrollY > 1600 && scrollY < 1700) {
-    //     cardOne.style.opacity = 0.5;
-    //   } else if (scrollY > 1700 && scrollY < 1800) {
-    //     cardOne.style.opacity = 0.7;
-    //   } else if (scrollY > 1800) {
-    //     cardOne.style.opacity = 1;
-    //   }
+
     document.addEventListener("scroll", () => {
       const scrollY = Math.floor(parseInt(window.scrollY));
       if (scrollY < wrapperTop) {

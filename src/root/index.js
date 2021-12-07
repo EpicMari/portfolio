@@ -6,6 +6,7 @@ import NavigationTemplate from "../templates/NavigationTemplate";
 import Home from "../views/Home";
 import About from "../views/About";
 import Projects from "../views/Projects";
+import Contact from "../views/Contact";
 
 const Root = () => {
   return (
@@ -15,6 +16,7 @@ const Root = () => {
         <Home />
         <About />
         <Projects />
+        <Contact />
       </NavigationTemplate>
     </ThemeProvider>
   );

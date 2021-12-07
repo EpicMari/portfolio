@@ -226,7 +226,7 @@ export const StyledDiv = styled.div`
     ${({ projectsViews__wrapper }) =>
     projectsViews__wrapper &&
     css`
-      height: 400vh;
+      height: 300vh;
     `}
 
     ${({ sectionProjects }) =>
@@ -299,7 +299,6 @@ export const StyledDiv = styled.div`
     technologies__line &&
     css`
       height: 470px;
-      /* height: 100%; */
       width: 1px;
       grid-area: 2 / 2 / 5 / 2;
       align-self: start;
@@ -315,6 +314,7 @@ export const StyledDiv = styled.div`
     ${({ technologies }) =>
     technologies &&
     css`
+      z-index: 5;
       width: 100%;
       max-width: 1000px;
       display: grid;
@@ -359,5 +359,61 @@ export const StyledDiv = styled.div`
       &.card8 {
         grid-area: 5 / 3 / 5 / 3;
       }
+    `}
+
+    ${({ contactViews }) => contactViews && css``}
+
+    
+    ${({ footerText }) =>
+    footerText &&
+    css`
+      max-width: 1000px;
+      margin: 0 auto;
+      display: grid;
+      place-items: center;
+      padding: 120px 0;
+
+      @media (min-width: ${({ theme }) => theme.devices.laptop}) {
+        padding: 200px 0;
+      }
+    `}
+      
+    ${({ footerLink }) => footerLink && css``}
+
+    ${({ footerLink__content }) =>
+    footerLink__content &&
+    css`
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 20px;
+      max-width: 1000px;
+
+      @media (min-width: ${({ theme }) => theme.devices.laptop}) {
+        & > div {
+          display: flex;
+        }
+
+        width: 90%;
+        margin: 0 auto 30px;
+        align-content: center;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+      }
+    `}
+
+    ${({ footerLink__line }) =>
+    footerLink__line &&
+    css`
+      margin: 30px auto;
+      height: 1px;
+      width: 90%;
+      background-image: linear-gradient(
+        90deg,
+        hsla(0, 0%, 53.3%, 0),
+        hsla(0, 0%, 53.3%, 0.3) 20%,
+        hsla(0, 0%, 53.3%, 0.3) 80%,
+        hsla(0, 0%, 53.3%, 0)
+      );
     `}
 `;

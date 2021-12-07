@@ -28,8 +28,12 @@ const Div = ({
   sectionProjects__projectsCard,
   technologies,
   technologies__line,
-
   technologies__card,
+  contactViews,
+  footerLink,
+  footerText,
+  footerLink__line,
+  footerLink__content,
 }) => {
   return (
     <StyledDiv
@@ -59,6 +63,11 @@ const Div = ({
       technologies={technologies}
       technologies__line={technologies__line}
       technologies__card={technologies__card}
+      contactViews={contactViews}
+      footerLink={footerLink}
+      footerText={footerText}
+      footerLink__line={footerLink__line}
+      footerLink__content={footerLink__content}
     >
       {children}
     </StyledDiv>
