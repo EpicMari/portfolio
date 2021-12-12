@@ -11,17 +11,17 @@ const NavListLink = () => {
     <Div nav__content>
       <Ul nav__list>
         <Li nav__item>
-          <Link href={links.projects}>
+          <Link linkType="linkScroll" to={links.projects}>
             <Paragraph nav__description>Projects</Paragraph>
           </Link>
         </Li>
         <Li nav__item>
-          <Link href={links.about}>
+          <Link linkType="linkScroll" to={links.about}>
             <Paragraph nav__description>About</Paragraph>
           </Link>
         </Li>
         <Li nav__item>
-          <Link href={links.contact}>
+          <Link linkType="linkScroll" to={links.contact}>
             <Paragraph nav__description>Contact</Paragraph>
           </Link>
         </Li>

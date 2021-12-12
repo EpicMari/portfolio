@@ -1,6 +1,6 @@
 export const links = {
-  home: "#home",
-  about: "#about",
-  contact: "#contact",
-  projects: "#projects",
+  home: "home",
+  about: "about",
+  contact: "contact",
+  projects: "projects",
 };

@@ -7,7 +7,7 @@ import Link from "../../atoms/Link";
 const NavLogo = () => {
   return (
     <Div>
-      <Link href={links.home}>
+      <Link linkType="linkScroll" to={links.home}>
         <Heading headingType="h3" headLogo>
           Mari.
         </Heading>

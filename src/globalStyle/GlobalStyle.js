@@ -24,7 +24,7 @@ export const GlobalStyle = createGlobalStyle`
     font-family: 'Rubik', sans-serif;
   }
 
-  button {
+  button, a {
     cursor: pointer;
   }
   ul {
