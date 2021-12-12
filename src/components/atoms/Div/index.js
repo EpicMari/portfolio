@@ -27,6 +27,7 @@ const Div = ({
   sectionProjects__projectsCards,
   sectionProjects__projectsCard,
   technologies,
+  technologies__wrapper,
   technologies__line,
   technologies__card,
   contactViews,
@@ -61,6 +62,7 @@ const Div = ({
       sectionProjects__projectsCards={sectionProjects__projectsCards}
       sectionProjects__projectsCard={sectionProjects__projectsCard}
       technologies={technologies}
+      technologies__wrapper={technologies__wrapper}
       technologies__line={technologies__line}
       technologies__card={technologies__card}
       contactViews={contactViews}

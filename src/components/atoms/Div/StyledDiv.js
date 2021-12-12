@@ -226,7 +226,7 @@ export const StyledDiv = styled.div`
     ${({ projectsViews__wrapper }) =>
     projectsViews__wrapper &&
     css`
-      height: 300vh;
+      height: 250vh;
     `}
 
     ${({ sectionProjects }) =>
@@ -314,7 +314,14 @@ export const StyledDiv = styled.div`
     ${({ technologies }) =>
     technologies &&
     css`
-      z-index: 5;
+      background-color: ${({ theme }) => theme.colors.black};
+      width: 100%;
+      padding-bottom: 80px;
+    `}
+
+    ${({ technologies__wrapper }) =>
+    technologies__wrapper &&
+    css`
       width: 100%;
       max-width: 1000px;
       display: grid;
