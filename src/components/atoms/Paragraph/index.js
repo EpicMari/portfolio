@@ -8,6 +8,7 @@ const Paragraph = ({
   footerText__link,
   footerLink__link,
   footerLink__me,
+  skillsDescription__description,
 }) => {
   return (
     <StyledParagraph
@@ -16,6 +17,7 @@ const Paragraph = ({
       footerText__link={footerText__link}
       footerLink__link={footerLink__link}
       footerLink__me={footerLink__me}
+      skillsDescription__description={skillsDescription__description}
     >
       {children}
     </StyledParagraph>

@@ -103,4 +103,14 @@ export const StyledParagraph = styled.p`
         margin-top: 0;
       }
     `}
+
+    ${({ skillsDescription__description }) =>
+    skillsDescription__description &&
+    css`
+      font-size: ${({ theme }) => theme.fontSize.l};
+
+      @media (min-width: ${({ theme }) => theme.devices.desktop}) {
+        font-size: 20px;
+      }
+    `}
 `;

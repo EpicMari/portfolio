@@ -35,6 +35,9 @@ const Div = ({
   footerText,
   footerLink__line,
   footerLink__content,
+  skills,
+  skillsDescription__descriptionContent,
+  skillsDescription,
 }) => {
   return (
     <StyledDiv
@@ -70,6 +73,11 @@ const Div = ({
       footerText={footerText}
       footerLink__line={footerLink__line}
       footerLink__content={footerLink__content}
+      skills={skills}
+      skillsDescription__descriptionContent={
+        skillsDescription__descriptionContent
+      }
+      skillsDescription={skillsDescription}
     >
       {children}
     </StyledDiv>
