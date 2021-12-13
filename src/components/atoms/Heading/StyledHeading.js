@@ -29,6 +29,14 @@ export const H1 = styled.h1`
       @media (min-width: ${({ theme }) => theme.devices.screenFullHd}) {
         font-size: ${({ theme }) => theme.fontSize.bigFont.xxl};
       }
+      @media (max-height: ${({ theme }) =>
+          theme.devices.laptop}) and (orientation: portrait) {
+        font-size: ${({ theme }) => theme.fontSize.xxl};
+      }
+      @media (max-height: ${({ theme }) =>
+          theme.devices.tablet}) and (orientation: landscape) {
+        font-size: ${({ theme }) => theme.fontSize.xl};
+      }
     `}
 `;
 export const H2 = styled.h2`
@@ -50,11 +58,17 @@ export const H2 = styled.h2`
     sectionMe__name &&
     css`
       margin-bottom: 20px;
+
+      @media (max-height: ${({ theme }) =>
+          theme.devices.tablet}) and (orientation: landscape) {
+        font-size: ${({ theme }) => theme.fontSize.l};
+      }
     `}
 
   ${({ aboutMeText__heading }) =>
     aboutMeText__heading &&
     css`
+      margin: 40px 0;
       @media (min-width: ${({ theme }) => theme.devices.desktop}) {
         grid-area: 1 / 2;
         transform: rotate(-90deg);
@@ -111,6 +125,17 @@ export const H3 = styled.h3`
 
       @media (min-width: ${({ theme }) => theme.devices.desktopXl}) {
         margin-bottom: 3%;
+      }
+
+      @media screen and (orientation: landscape) and (max-width: ${({
+          theme,
+        }) => theme.devices.desktop}) {
+        font-size: ${({ theme }) => theme.fontSize.xxl};
+      }
+
+      @media screen and (orientation: portrait) and (max-width: ${({ theme }) =>
+          theme.devices.laptop}) {
+        font-size: ${({ theme }) => theme.fontSize.xxxl};
       }
     `}
 `;

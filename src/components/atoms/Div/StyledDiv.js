@@ -14,7 +14,7 @@ export const StyledDiv = styled.div`
   }
 
   &.viewsWrapper {
-    height: 100vh;
+    min-height: 100vh;
     padding-top: 40px;
   }
 
@@ -93,9 +93,23 @@ export const StyledDiv = styled.div`
       flex-direction: column;
       justify-content: space-between;
       align-items: center;
-      height: 100%;
-      padding: 110px 0 20px;
+      height: calc(100vh - 40px);
+      padding: 80px 0 20px;
       margin: 0 20px;
+
+      @media (max-height: ${({ theme }) =>
+          theme.devices.laptop}) and (orientation: portrait) {
+        padding: 10% 0 20px;
+      }
+
+      @media (min-width: ${({ theme }) =>
+          theme.devices.tablet}) and (orientation: landscape) {
+        padding-top: 30px;
+      }
+      @media (min-width: ${({ theme }) =>
+          theme.devices.desktop}) and (orientation: landscape) {
+        padding-top: 60px;
+      }
     `}
 
     ${({ scrollBalls }) =>
@@ -182,13 +196,41 @@ export const StyledDiv = styled.div`
     ${({ sectionMe__img }) =>
     sectionMe__img &&
     css`
-      width: 324px;
-      height: 324px;
+      /* width: 324px;
+      height: 324px; */
+      height: 40vh;
+      width: 40vh;
+      max-width: 300px;
+      max-height: 300px;
+      padding: 60px;
       border-radius: 50%;
-      margin-bottom: 40px;
+      margin-bottom: 20px;
+
+      @media (max-height: ${({ theme }) =>
+          theme.devices.laptop}) and (orientation: portrait) {
+        padding: 15%;
+        margin-bottom: 0;
+      }
+
+      @media (min-width: ${({ theme }) =>
+          theme.devices.tablet}) and (orientation: landscape) {
+        padding: 10px;
+        height: 30vh;
+        width: 30vh;
+        margin-bottom: 0;
+      }
     `}
 
-    ${({ aboutMeText }) =>
+      &#about {
+    padding-bottom: 80px;
+
+    @media (min-width: ${({ theme }) => theme.devices.desktop}) {
+      display: grid;
+      grid-area: center;
+    }
+  }
+
+  ${({ aboutMeText }) =>
     aboutMeText &&
     css`
       display: grid;
@@ -203,12 +245,15 @@ export const StyledDiv = styled.div`
       }
     `}
 
-    ${({ aboutMeText__text }) =>
+  ${({ aboutMeText__text }) =>
     aboutMeText__text &&
     css`
       width: 80%;
 
-      @media (min-width: ${({ theme }) => theme.devices.desktop}) {
+      @media screen and (orientation: landscape) and (max-width: ${({
+          theme,
+        }) => theme.devices.desktop}) {
+        width: 60%;
       }
     `}
     ${({ aboutMeText__slider }) =>
@@ -217,9 +262,23 @@ export const StyledDiv = styled.div`
       width: 80%;
       place-self: center;
       max-width: 800px;
+      margin-top: 80px;
 
       @media (min-width: ${({ theme }) => theme.devices.desktop}) {
         grid-area: 1 / 3;
+        margin-top: 0;
+      }
+
+      @media screen and (orientation: landscape) and (max-width: ${({
+          theme,
+        }) => theme.devices.laptop}) {
+        max-width: 400px;
+      }
+
+      @media screen and (orientation: landscape) and (max-width: ${({
+          theme,
+        }) => theme.devices.desktop}) {
+        max-width: 400px;
       }
     `}
 
@@ -377,10 +436,22 @@ export const StyledDiv = styled.div`
       margin: 0 auto;
       display: grid;
       place-items: center;
-      padding: 120px 0;
+      padding: 120px 10px;
 
       @media (min-width: ${({ theme }) => theme.devices.laptop}) {
         padding: 200px 0;
+      }
+
+      @media screen and (orientation: landscape) and (min-width: ${({
+          theme,
+        }) => theme.devices.tablet}) {
+        padding: 50px 0 25px;
+      }
+
+      @media screen and (orientation: landscape) and (max-width: ${({
+          theme,
+        }) => theme.devices.desktop}) {
+        padding: 100px 0 70px;
       }
     `}
       
@@ -430,6 +501,25 @@ export const StyledDiv = styled.div`
       padding-bottom: 150px;
     `}
 
+    ${({ skillsDescription }) =>
+    skillsDescription &&
+    css`
+      width: 100%;
+      max-width: 800px;
+      padding: 0 5%;
+      margin: 0 auto;
+
+      @media (min-width: ${({ theme }) => theme.devices.desktop}) {
+        max-width: 1000px;
+        padding: 0;
+        align-items: center;
+        display: grid;
+        grid-gap: 20px;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 300px 300px;
+      }
+    `}
+
     ${({ skillsDescription__descriptionContent }) =>
     skillsDescription__descriptionContent &&
     css`
@@ -451,25 +541,6 @@ export const StyledDiv = styled.div`
           grid-area: 1 / 1;
           margin-bottom: 0;
         }
-      }
-    `}
-
-    ${({ skillsDescription }) =>
-    skillsDescription &&
-    css`
-      width: 100%;
-      max-width: 800px;
-      padding: 0 5%;
-      margin: 0 auto;
-
-      @media (min-width: ${({ theme }) => theme.devices.desktop}) {
-        max-width: 1000px;
-        padding: 0;
-        align-items: center;
-        display: grid;
-        grid-gap: 20px;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 300px 300px;
       }
     `}
 `;
