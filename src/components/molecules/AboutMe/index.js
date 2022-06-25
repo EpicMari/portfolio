@@ -25,7 +25,7 @@ const AboutMe = () => {
         </Paragraph>
       </Div>
       <Div aboutMeText__slider>
-        <AutoplaySlider play={true} cancelOnInteraction={false} interval={5000} bullets={false}>
+        <AutoplaySlider play cancelOnInteraction={false} interval={5000} bullets={false}>
           <div data-src="/path/to/image-0.jpg" />
           <div data-src="/path/to/image-1.jpg" />
           <div data-src="/path/to/image-2.jpg" />

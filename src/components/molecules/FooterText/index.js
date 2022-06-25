@@ -6,8 +6,7 @@ import Link from '../../atoms/Link';
 
 const FooterText = () => {
   return (
-    <>
-      <Link href="mailto:reinicke.mari@gmail.com">
+    <Link href="mailto:reinicke.mari@gmail.com">
         <Div footerText>
           <Heading headingType="h3" footerText__heading>
             Interested in working with me?
@@ -15,7 +14,6 @@ const FooterText = () => {
           <Paragraph footerText__link>reinicke.mari@gmail.com</Paragraph>
         </Div>
       </Link>
-    </>
   );
 };
 
