@@ -1,8 +1,8 @@
-import React, { useState } from "react";
-import NavLogo from "../NavLogo";
-import Button from "../../atoms/Button";
-import Div from "../../atoms/Div";
-import NavListLink from "../NavListLink";
+import React, { useState } from 'react';
+import NavLogo from '../NavLogo';
+import Button from '../../atoms/Button';
+import Div from '../../atoms/Div';
+import NavListLink from '../NavListLink';
 
 const NavMobile = () => {
   const [menuOnOff, setMenuOnOff] = useState(false);
@@ -20,7 +20,7 @@ const NavMobile = () => {
           </Button>
         </Div>
       </Div>
-      <Div nav__menu className={menuOnOff && "active"}>
+      <Div nav__menu className={menuOnOff && 'active'}>
         <NavListLink />
       </Div>
     </Div>

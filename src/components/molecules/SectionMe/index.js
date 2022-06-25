@@ -1,10 +1,10 @@
-import React from "react";
-import Div from "../../atoms/Div";
-import Heading from "../../atoms/Heading";
-import Img from "../../atoms/Img";
-import Martin from "../../../assets/Martin.jpg";
-import img2 from "../../../assets/cvvvvvvv.jpg";
-import img3 from "../../../assets/cvvv1.jpg";
+import React from 'react';
+import Div from '../../atoms/Div';
+import Heading from '../../atoms/Heading';
+import Img from '../../atoms/Img';
+import Martin from '../../../assets/Martin.jpg';
+import img2 from '../../../assets/cvvvvvvv.jpg';
+import img3 from '../../../assets/cvvv1.jpg';
 
 const SectionMe = () => {
   return (

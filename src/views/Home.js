@@ -1,7 +1,7 @@
-import React from "react";
-import Div from "../components/atoms/Div";
-import HomeContent from "../components/organisms/HomeContent";
-import { links } from "../utils/links";
+import React from 'react';
+import Div from '../components/atoms/Div';
+import HomeContent from '../components/organisms/HomeContent';
+import { links } from '../utils/links';
 
 const Home = () => {
   return (

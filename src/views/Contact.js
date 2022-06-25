@@ -1,7 +1,7 @@
-import React from "react";
-import Div from "../components/atoms/Div";
-import ContantContent from "../components/organisms/ContactContent";
-import { links } from "../utils/links";
+import React from 'react';
+import Div from '../components/atoms/Div';
+import ContantContent from '../components/organisms/ContactContent';
+import { links } from '../utils/links';
 
 const Contact = () => {
   return (

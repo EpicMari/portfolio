@@ -1,7 +1,7 @@
-import React from "react";
-import Div from "../../atoms/Div";
-import SkillsDescription from "../../molecules/SkillsDescription";
-import Technologies from "../../molecules/Technologies";
+import React from 'react';
+import Div from '../../atoms/Div';
+import SkillsDescription from '../../molecules/SkillsDescription';
+import Technologies from '../../molecules/Technologies';
 
 const Skills = () => {
   return (

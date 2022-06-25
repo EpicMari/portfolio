@@ -1,4 +1,4 @@
-import styled, { css } from "styled-components";
+import styled, { css } from 'styled-components';
 
 export const StyledParagraph = styled.p`
   ${({ nav__description }) =>
@@ -13,7 +13,7 @@ export const StyledParagraph = styled.p`
         position: relative;
         &::after {
           position: absolute;
-          content: "";
+          content: '';
           top: 80%;
           left: 0;
           width: 100%;
@@ -58,7 +58,7 @@ export const StyledParagraph = styled.p`
       position: relative;
       &::after {
         position: absolute;
-        content: "";
+        content: '';
         top: 90%;
         left: 0;
         width: 100%;

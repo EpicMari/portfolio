@@ -1,5 +1,5 @@
-import React from "react";
-import { StyledDiv } from "./StyledDiv";
+import React from 'react';
+import { StyledDiv } from './StyledDiv';
 
 const Div = ({
   children,
@@ -74,9 +74,7 @@ const Div = ({
       footerLink__line={footerLink__line}
       footerLink__content={footerLink__content}
       skills={skills}
-      skillsDescription__descriptionContent={
-        skillsDescription__descriptionContent
-      }
+      skillsDescription__descriptionContent={skillsDescription__descriptionContent}
       skillsDescription={skillsDescription}
     >
       {children}

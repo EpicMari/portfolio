@@ -1,8 +1,8 @@
-import React from "react";
-import Div from "../components/atoms/Div";
-import ProjectsContent from "../components/organisms/ProjectsContent";
-import Skills from "../components/organisms/Skills";
-import { links } from "../utils/links";
+import React from 'react';
+import Div from '../components/atoms/Div';
+import ProjectsContent from '../components/organisms/ProjectsContent';
+import Skills from '../components/organisms/Skills';
+import { links } from '../utils/links';
 
 const Projects = () => {
   return (

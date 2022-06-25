@@ -1,7 +1,7 @@
-import React from "react";
-import Div from "../../atoms/Div";
-import NavListLink from "../NavListLink";
-import NavLogo from "../NavLogo";
+import React from 'react';
+import Div from '../../atoms/Div';
+import NavListLink from '../NavListLink';
+import NavLogo from '../NavLogo';
 
 const NavDesktop = () => {
   return (

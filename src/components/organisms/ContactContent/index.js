@@ -1,6 +1,6 @@
-import React from "react";
-import FooterLink from "../../molecules/FooterLink";
-import FooterText from "../../molecules/FooterText";
+import React from 'react';
+import FooterLink from '../../molecules/FooterLink';
+import FooterText from '../../molecules/FooterText';
 
 const ContantContent = () => {
   return (

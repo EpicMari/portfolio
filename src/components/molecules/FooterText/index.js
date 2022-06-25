@@ -1,8 +1,8 @@
-import React from "react";
-import Div from "../../atoms/Div";
-import Heading from "../../atoms/Heading";
-import Paragraph from "../../atoms/Paragraph";
-import Link from "../../atoms/Link";
+import React from 'react';
+import Div from '../../atoms/Div';
+import Heading from '../../atoms/Heading';
+import Paragraph from '../../atoms/Paragraph';
+import Link from '../../atoms/Link';
 
 const FooterText = () => {
   return (

@@ -1,15 +1,15 @@
-import React from "react";
-import Div from "../../atoms/Div";
-import Heading from "../../atoms/Heading";
-import Img from "../../atoms/Img";
-import html from "../../../assets/svg/html.svg";
-import css from "../../../assets/svg/css.svg";
-import js from "../../../assets/svg/js.svg";
-import react from "../../../assets/svg/react.svg";
-import redux from "../../../assets/svg/redux.svg";
-import git from "../../../assets/svg/git.svg";
-import firebase from "../../../assets/svg/firebase.svg";
-import styledComponents from "../../../assets/svg/styledComponents.png";
+import React from 'react';
+import Div from '../../atoms/Div';
+import Heading from '../../atoms/Heading';
+import Img from '../../atoms/Img';
+import html from '../../../assets/svg/html.svg';
+import css from '../../../assets/svg/css.svg';
+import js from '../../../assets/svg/js.svg';
+import react from '../../../assets/svg/react.svg';
+import redux from '../../../assets/svg/redux.svg';
+import git from '../../../assets/svg/git.svg';
+import firebase from '../../../assets/svg/firebase.svg';
+import styledComponents from '../../../assets/svg/styledComponents.png';
 
 const Technologies = () => {
   return (

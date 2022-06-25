@@ -1,7 +1,7 @@
-import React from "react";
-import Div from "../components/atoms/Div";
-import AboutContent from "../components/organisms/AboutContent";
-import { links } from "../utils/links";
+import React from 'react';
+import Div from '../components/atoms/Div';
+import AboutContent from '../components/organisms/AboutContent';
+import { links } from '../utils/links';
 
 const About = () => {
   return (

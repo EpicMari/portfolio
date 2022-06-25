@@ -1,8 +1,8 @@
-import React from "react";
-import { links } from "../../../utils/links";
-import Div from "../../atoms/Div";
-import Heading from "../../atoms/Heading";
-import Link from "../../atoms/Link";
+import React from 'react';
+import { links } from '../../../utils/links';
+import Div from '../../atoms/Div';
+import Heading from '../../atoms/Heading';
+import Link from '../../atoms/Link';
 
 const NavLogo = () => {
   return (

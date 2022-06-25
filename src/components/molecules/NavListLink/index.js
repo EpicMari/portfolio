@@ -1,10 +1,10 @@
-import React from "react";
-import Div from "../../atoms/Div";
-import Li from "../../atoms/Li";
-import Ul from "../../atoms/Ul";
-import Paragraph from "../../atoms/Paragraph";
-import Link from "../../atoms/Link";
-import { links } from "../../../utils/links";
+import React from 'react';
+import Div from '../../atoms/Div';
+import Li from '../../atoms/Li';
+import Ul from '../../atoms/Ul';
+import Paragraph from '../../atoms/Paragraph';
+import Link from '../../atoms/Link';
+import { links } from '../../../utils/links';
 
 const NavListLink = () => {
   return (

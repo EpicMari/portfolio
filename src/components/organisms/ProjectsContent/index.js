@@ -1,5 +1,5 @@
-import React from "react";
-import SectionProjects from "../../molecules/SectionProjects";
+import React from 'react';
+import SectionProjects from '../../molecules/SectionProjects';
 
 const ProjectsContent = () => {
   return <SectionProjects />;

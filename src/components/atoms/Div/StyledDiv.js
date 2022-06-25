@@ -1,4 +1,4 @@
-import styled, { css } from "styled-components";
+import styled, { css } from 'styled-components';
 
 export const StyledDiv = styled.div`
   &.navWrapper {
@@ -97,17 +97,14 @@ export const StyledDiv = styled.div`
       padding: 80px 0 20px;
       margin: 0 20px;
 
-      @media (max-height: ${({ theme }) =>
-          theme.devices.laptop}) and (orientation: portrait) {
+      @media (max-height: ${({ theme }) => theme.devices.laptop}) and (orientation: portrait) {
         padding: 10% 0 20px;
       }
 
-      @media (min-width: ${({ theme }) =>
-          theme.devices.tablet}) and (orientation: landscape) {
+      @media (min-width: ${({ theme }) => theme.devices.tablet}) and (orientation: landscape) {
         padding-top: 30px;
       }
-      @media (min-width: ${({ theme }) =>
-          theme.devices.desktop}) and (orientation: landscape) {
+      @media (min-width: ${({ theme }) => theme.devices.desktop}) and (orientation: landscape) {
         padding-top: 60px;
       }
     `}
@@ -206,14 +203,12 @@ export const StyledDiv = styled.div`
       border-radius: 50%;
       margin-bottom: 20px;
 
-      @media (max-height: ${({ theme }) =>
-          theme.devices.laptop}) and (orientation: portrait) {
+      @media (max-height: ${({ theme }) => theme.devices.laptop}) and (orientation: portrait) {
         padding: 15%;
         margin-bottom: 0;
       }
 
-      @media (min-width: ${({ theme }) =>
-          theme.devices.tablet}) and (orientation: landscape) {
+      @media (min-width: ${({ theme }) => theme.devices.tablet}) and (orientation: landscape) {
         padding: 10px;
         height: 30vh;
         width: 30vh;
@@ -250,9 +245,8 @@ export const StyledDiv = styled.div`
     css`
       width: 80%;
 
-      @media screen and (orientation: landscape) and (max-width: ${({
-          theme,
-        }) => theme.devices.desktop}) {
+      @media screen and (orientation: landscape) and (max-width: ${({ theme }) =>
+          theme.devices.desktop}) {
         width: 60%;
       }
     `}
@@ -269,15 +263,13 @@ export const StyledDiv = styled.div`
         margin-top: 0;
       }
 
-      @media screen and (orientation: landscape) and (max-width: ${({
-          theme,
-        }) => theme.devices.laptop}) {
+      @media screen and (orientation: landscape) and (max-width: ${({ theme }) =>
+          theme.devices.laptop}) {
         max-width: 400px;
       }
 
-      @media screen and (orientation: landscape) and (max-width: ${({
-          theme,
-        }) => theme.devices.desktop}) {
+      @media screen and (orientation: landscape) and (max-width: ${({ theme }) =>
+          theme.devices.desktop}) {
         max-width: 400px;
       }
     `}
@@ -442,15 +434,13 @@ export const StyledDiv = styled.div`
         padding: 200px 0;
       }
 
-      @media screen and (orientation: landscape) and (min-width: ${({
-          theme,
-        }) => theme.devices.tablet}) {
+      @media screen and (orientation: landscape) and (min-width: ${({ theme }) =>
+          theme.devices.tablet}) {
         padding: 50px 0 25px;
       }
 
-      @media screen and (orientation: landscape) and (max-width: ${({
-          theme,
-        }) => theme.devices.desktop}) {
+      @media screen and (orientation: landscape) and (max-width: ${({ theme }) =>
+          theme.devices.desktop}) {
         padding: 100px 0 70px;
       }
     `}

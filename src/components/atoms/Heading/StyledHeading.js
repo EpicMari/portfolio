@@ -1,4 +1,4 @@
-import styled, { css } from "styled-components";
+import styled, { css } from 'styled-components';
 
 export const H1 = styled.h1`
   text-align: center;
@@ -29,12 +29,10 @@ export const H1 = styled.h1`
       @media (min-width: ${({ theme }) => theme.devices.screenFullHd}) {
         font-size: ${({ theme }) => theme.fontSize.bigFont.xxl};
       }
-      @media (max-height: ${({ theme }) =>
-          theme.devices.laptop}) and (orientation: portrait) {
+      @media (max-height: ${({ theme }) => theme.devices.laptop}) and (orientation: portrait) {
         font-size: ${({ theme }) => theme.fontSize.xxl};
       }
-      @media (max-height: ${({ theme }) =>
-          theme.devices.tablet}) and (orientation: landscape) {
+      @media (max-height: ${({ theme }) => theme.devices.tablet}) and (orientation: landscape) {
         font-size: ${({ theme }) => theme.fontSize.xl};
       }
     `}
@@ -59,8 +57,7 @@ export const H2 = styled.h2`
     css`
       margin-bottom: 20px;
 
-      @media (max-height: ${({ theme }) =>
-          theme.devices.tablet}) and (orientation: landscape) {
+      @media (max-height: ${({ theme }) => theme.devices.tablet}) and (orientation: landscape) {
         font-size: ${({ theme }) => theme.fontSize.l};
       }
     `}
@@ -127,9 +124,8 @@ export const H3 = styled.h3`
         margin-bottom: 3%;
       }
 
-      @media screen and (orientation: landscape) and (max-width: ${({
-          theme,
-        }) => theme.devices.desktop}) {
+      @media screen and (orientation: landscape) and (max-width: ${({ theme }) =>
+          theme.devices.desktop}) {
         font-size: ${({ theme }) => theme.fontSize.xxl};
       }
 

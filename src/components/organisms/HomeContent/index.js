@@ -1,5 +1,5 @@
-import React from "react";
-import SectionMe from "../../molecules/SectionMe";
+import React from 'react';
+import SectionMe from '../../molecules/SectionMe';
 
 const HomeContent = () => {
   return <SectionMe />;

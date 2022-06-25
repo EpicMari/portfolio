@@ -1,7 +1,7 @@
-import React from "react";
-import Div from "../../atoms/Div";
-import Link from "../../atoms/Link";
-import Paragraph from "../../atoms/Paragraph";
+import React from 'react';
+import Div from '../../atoms/Div';
+import Link from '../../atoms/Link';
+import Paragraph from '../../atoms/Paragraph';
 
 const FooterLink = () => {
   return (
