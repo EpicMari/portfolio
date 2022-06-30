@@ -9,7 +9,6 @@ const Heading = ({
   sectionMe__name,
   sectionMe__jobPosition,
   aboutMeText__heading,
-  sectionProjects__headingTitleSection,
   technologies__heading,
   sectionHeader,
   footerText__heading,
@@ -24,7 +23,6 @@ const Heading = ({
             className={className}
             sectionMe__name={sectionMe__name}
             aboutMeText__heading={aboutMeText__heading}
-            sectionProjects__headingTitleSection={sectionProjects__headingTitleSection}
             technologies__heading={technologies__heading}
             sectionHeader={sectionHeader}
           >

@@ -277,63 +277,40 @@ export const StyledDiv = styled.div`
     ${({ projectsViews__wrapper }) =>
     projectsViews__wrapper &&
     css`
-      height: 250vh;
-    `}
-
-    ${({ sectionProjects }) =>
-    sectionProjects &&
-    css`
-      position: sticky;
-      top: 0;
-      z-index: 1;
-    `}
-
-    ${({ sectionProjects__wrapper }) =>
-    sectionProjects__wrapper &&
-    css`
-      overflow: hidden;
-      height: 100vh;
+      height: 100%;
+      padding: 40px 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
       background-color: ${({ theme }) => theme.colors.black};
-      padding: 80px 0;
     `}
+
+    ${({ sectionProjects }) => sectionProjects && css``}
+
+    ${({ sectionProjects__wrapper }) => sectionProjects__wrapper && css``}
 
     ${({ sectionProjects__container }) =>
     sectionProjects__container &&
     css`
-      position: relative;
       display: flex;
-      height: 100%;
-      flex-direction: column;
-      align-items: center;
-      width: 90%;
-      max-width: 1000px;
-      margin: 0 auto;
+      height: 3000px;
     `}
 
-    ${({ sectionProjects__sectionTitle }) =>
-    sectionProjects__sectionTitle &&
+    ${({ sectionProjects__containerTwo }) =>
+    sectionProjects__containerTwo &&
     css`
-      position: absolute;
+      margin-top: 40px;
       width: 100%;
-      max-width: 1000px;
+      height: 400px;
     `}
 
-    ${({ sectionProjects__projectsCards }) =>
-    sectionProjects__projectsCards &&
-    css`
-      position: relative;
-      display: flex;
-      height: 100%;
-      width: 100%;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-    `}
+    ${({ sectionProjects__projectsCards }) => sectionProjects__projectsCards && css``}
 
     ${({ sectionProjects__projectsCard }) =>
     sectionProjects__projectsCard &&
     css`
-      position: absolute;
+      /* position: absolute;
       height: 300px;
       width: 100%;
       padding: 10%;
@@ -343,7 +320,7 @@ export const StyledDiv = styled.div`
       &.card {
         border-radius: 50px;
         height: 380px;
-      }
+      } */
     `}
 
     ${({ technologies__line }) =>

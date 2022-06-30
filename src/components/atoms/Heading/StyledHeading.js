@@ -73,13 +73,6 @@ export const H2 = styled.h2`
       }
     `}
 
-    ${({ sectionProjects__headingTitleSection }) =>
-    sectionProjects__headingTitleSection &&
-    css`
-      text-align: left;
-      font-size: 2.5em;
-    `}
-
     ${({ technologies__heading }) =>
     technologies__heading &&
     css`

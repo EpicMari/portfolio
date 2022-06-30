@@ -1,189 +1,124 @@
 import React, { useEffect } from 'react';
-import Div from '../../atoms/Div';
-import Heading from '../../atoms/Heading';
-import Paragraph from '../../atoms/Paragraph';
+import { gsap, ScrollTrigger } from 'gsap/all';
+import {
+  StyledCard,
+  StyledCards,
+  StyledContainer,
+  StyledContainerTwo,
+  StyledTitle,
+  StyledWrapper,
+  StyledParagraph,
+  StyledLink,
+  StyledLinkContainer,
+  StyledProjectTitle,
+} from './StyledSectionProjects';
 
 const SectionProjects = () => {
   useEffect(() => {
-    handleScroll();
-  }, [window]);
-  const handleScroll = () => {
-    const wrapper = document.querySelector('.projects');
-    const cardOne = document.querySelector('.card1');
-    const cardTwo = document.querySelector('.card2');
-    const cardThree = document.querySelector('.card3');
-    const cardFour = document.querySelector('.card4');
-    const wrapperTop = wrapper.offsetTop;
+    gsap.registerPlugin(ScrollTrigger);
 
-    document.addEventListener('scroll', () => {
-      const scrollY = Math.floor(parseInt(window.scrollY));
-      if (scrollY < wrapperTop) {
-        //cart1
-        cardOne.style.opacity = 0;
-      } else if (scrollY + 1 > wrapperTop && scrollY < wrapperTop + 100) {
-        //cart1
-        cardOne.style.opacity = 0.1;
-        cardOne.style.transform = 'translate3d(0, 120%, 0) scale3d(1, 1, 1)';
-      } else if (scrollY + 1 > wrapperTop + 100 && scrollY < wrapperTop + 200) {
-        //cart1
-        cardOne.style.opacity = 0.5;
-        cardOne.style.transform = 'translate3d(0, 70%, 0) scale3d(1, 1, 1)';
-        //cart2
-      } else if (scrollY + 1 > wrapperTop + 200 && scrollY < wrapperTop + 300) {
-        //cart1
-        cardOne.style.opacity = 1;
-        cardOne.style.transform = 'translate3d(0, 20%, 0) scale3d(1, 1, 1)';
-        //cart2
-        cardTwo.style.opacity = 0;
-        cardTwo.style.transform = 'translate3d(0, 190%, 0) scale3d(1, 1, 1)';
-      } else if (scrollY + 1 > wrapperTop + 300 && scrollY < wrapperTop + 400) {
-        //cart1
-        cardOne.style.transform = 'translate3d(0, -20%, 0) scale3d(1, 1, 1)';
-        //cart2
-        cardTwo.style.opacity = 0.1;
-        cardTwo.style.transform = 'translate3d(0, 120%, 0) scale3d(1, 1, 1)';
-      } else if (scrollY + 1 > wrapperTop + 400 && scrollY < wrapperTop + 500) {
-        //cart2
-        cardTwo.style.opacity = 0.5;
-        cardTwo.style.transform = 'translate3d(0, 70%, 0) scale3d(1, 1, 1)';
-      } else if (scrollY + 1 > wrapperTop + 500 && scrollY < wrapperTop + 600) {
-        //cart1
-        cardOne.style.transform = 'translate3d(0, -25%, 0) scale3d(0.95, 0.95, 1)';
-        //cart2
-        cardTwo.style.opacity = 1;
-        cardTwo.style.transform = 'translate3d(0, 20%, 0) scale3d(1, 1, 1)';
-        //cart3
-        cardThree.style.opacity = 0;
-        cardThree.style.transform = 'translate3d(0, 190%, 0) scale3d(1, 1, 1)';
-      } else if (scrollY + 1 > wrapperTop + 600 && scrollY < wrapperTop + 700) {
-        //cart1
-        cardOne.style.transform = 'translate3d(0, -30%, 0) scale3d(0.9, 0.9, 1)';
-        //cart2
-        cardTwo.style.transform = 'translate3d(0, -20%, 0) scale3d(1, 1, 1)';
-        //cart3
-        cardThree.style.opacity = 0.1;
-        cardThree.style.transform = 'translate3d(0, 120%, 0) scale3d(1, 1, 1)';
-      } else if (scrollY + 1 > wrapperTop + 700 && scrollY < wrapperTop + 800) {
-        //cart3
-        cardThree.style.opacity = 0.5;
-        cardThree.style.transform = 'translate3d(0, 70%, 0) scale3d(1, 1, 1)';
-      } else if (scrollY + 1 > wrapperTop + 800 && scrollY < wrapperTop + 900) {
-        //cart1
-        cardOne.style.transform = 'translate3d(0, -35%, 0) scale3d(0.85, 0.85, 1)';
-        //cart2
-        cardTwo.style.transform = 'translate3d(0, -25%, 0) scale3d(0.95, 0.95, 1)';
-        //cart3
-        cardThree.style.opacity = 1;
-        cardThree.style.transform = 'translate3d(0, 20%, 0) scale3d(1, 1, 1)';
-        //cart4
-        cardFour.style.opacity = 0;
-        cardFour.style.transform = 'translate3d(0, 190%, 0) scale3d(1, 1, 1)';
-      } else if (scrollY + 1 > wrapperTop + 900 && scrollY < wrapperTop + 1000) {
-        //cart1
-        cardOne.style.transform = 'translate3d(0, -40%, 0) scale3d(0.8, 0.8, 1)';
-        //cart2
-        cardTwo.style.transform = 'translate3d(0, -30%, 0) scale3d(0.9, 0.9, 1)';
-        //cart3
-        cardThree.style.transform = 'translate3d(0, -20%, 0) scale3d(1, 1, 1)';
-        //cart4
-        cardFour.style.opacity = 0.1;
-        cardFour.style.transform = 'translate3d(0, 120%, 0) scale3d(1, 1, 1)';
-      } else if (scrollY + 1 > wrapperTop + 1000 && scrollY < wrapperTop + 1100) {
-        //cart4
-        cardFour.style.opacity = 0.5;
-        cardFour.style.transform = 'translate3d(0, 70%, 0) scale3d(1, 1, 1)';
-      } else if (scrollY + 1 > wrapperTop + 1100 && scrollY < wrapperTop + 1200) {
-        //cart1
-        cardOne.style.transform = 'translate3d(0, -45%, 0) scale3d(0.75, 0.75, 1)';
-        //cart2
-        cardTwo.style.transform = 'translate3d(0, -35%, 0) scale3d(0.85, 0.85, 1)';
-        //cart3
-        cardThree.style.transform = 'translate3d(0, -25%, 0) scale3d(0.95, 0.95, 1)';
-        //cart4
-        cardFour.style.opacity = 1;
-        cardFour.style.transform = 'translate3d(0, 20%, 0) scale3d(1, 1, 1)';
-      } else if (scrollY + 1 > wrapperTop + 1200 && scrollY < wrapperTop + 1300) {
-        //cart1
-        cardOne.style.transform = 'translate3d(0, -50%, 0) scale3d(0.70, 0.70, 1)';
-        //cart2
-        cardTwo.style.transform = 'translate3d(0, -40%, 0) scale3d(0.80, 0.80, 1)';
-        //cart3
-        cardThree.style.transform = 'translate3d(0, -30%, 0) scale3d(0.90, 0.90, 1)';
-        //cart4
-        cardFour.style.transform = 'translate3d(0, -20%, 0) scale3d(1, 1, 1)';
-      }
+    const cards = gsap.utils.toArray('.card');
+
+    cards.forEach((card, index) => {
+      // eslint-disable-next-line no-unused-vars
+      const tween = gsap.to(card, {
+        scrollTrigger: {
+          trigger: card,
+          start: () => `top bottom-=100`,
+          end: () => `top bottom`,
+          scrub: false,
+          markers: false,
+          invalidateOnRefresh: true,
+        },
+        ease: 'none',
+        scale: () => 1 - (cards.length - index) * 0.025,
+      });
+
+      ScrollTrigger.create({
+        trigger: card,
+        start: 'top top',
+        pin: true,
+        pinSpacing: false,
+        markers: false,
+        id: 'pin',
+        end: 'max-=1900',
+        invalidateOnRefresh: true,
+      });
     });
-  };
+  }, [window.load]);
 
-  const styles = {
-    transform: `translate3d(0px, 120%, 0px) scale3d(1, 1, 1)`,
-    opacity: 0,
-    willChange: 'transform, opacity',
-    transformStyle: 'preserve-3d',
-    transition: 'transform 0.3s ease-out, opacity 0.3s ease-out',
-  };
   return (
-    <Div sectionProjects>
-      <Div sectionProjects__wrapper>
-        <Div sectionProjects__container>
-          <Div sectionProjects__sectionTitle>
-            <Heading headingType="h2" sectionProjects__headingTitleSection>
-              My projects
-            </Heading>
-          </Div>
-          <Div sectionProjects__projectsCards>
-            <Div
-              className="card card1"
-              sectionProjects__projectsCard
-              style={styles}
-              onScroll={handleScroll}
-            >
-              <Paragraph>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab dolores harum obcaecati
-                incidunt repellat nulla quidem iure eius blanditiis facilis, provident corporis
-                laborum illum tempora! Nostrum veniam eius ut ea!
-              </Paragraph>
-            </Div>
-            <Div
-              className="card card2"
-              sectionProjects__projectsCard
-              style={styles}
-              onScroll={handleScroll}
-            >
-              <Paragraph>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae natus ad repellat,
-                quis, molestiae architecto fuga tenetur quidem voluptatum alias vero facilis
-                numquam, hic deleniti voluptate nisi odio suscipit nobis!
-              </Paragraph>
-            </Div>
-            <Div
-              className="card card3"
-              sectionProjects__projectsCard
-              style={styles}
-              onScroll={handleScroll}
-            >
-              <Paragraph>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum sapiente quasi
-                nesciunt nisi numquam at eos sequi obcaecati voluptate id, vero eveniet inventore
-                autem qui delectus? Quae mollitia deserunt facilis!
-              </Paragraph>
-            </Div>
-            <Div
-              className="card card4"
-              sectionProjects__projectsCard
-              style={styles}
-              onScroll={handleScroll}
-            >
-              <Paragraph>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum sapiente quasi
-                nesciunt nisi numquam at eos sequi obcaecati voluptate id, vero eveniet inventore
-                autem qui delectus? Quae mollitia deserunt facilis!
-              </Paragraph>
-            </Div>
-          </Div>
-        </Div>
-      </Div>
-    </Div>
+    <StyledWrapper>
+      <StyledTitle>My projects</StyledTitle>
+      <StyledContainer>
+        <StyledCards>
+          <StyledCard className="card">
+            <StyledProjectTitle>Admin Panel</StyledProjectTitle>
+            <StyledParagraph>
+              Admin panel made in React. Includes mailbox based on Gmail API. Weather widget which
+              is based on geolocation. Firebase for viewing and editing orders as well as logging in
+              and creating accounts.
+            </StyledParagraph>
+            <StyledLinkContainer>
+              <StyledLink href="https://admin-panel-shop-online.netlify.app" target="_blank">
+                Live
+              </StyledLink>
+              <StyledLink href="https://github.com/EpicMari/admin_panel" target="_blank">
+                Github
+              </StyledLink>
+            </StyledLinkContainer>
+          </StyledCard>
+          <StyledCard className="card">
+            <StyledProjectTitle>Shop Online</StyledProjectTitle>
+            <StyledParagraph>
+              An online store application is a mapping of a real online store. Where we have such
+              functionalities, a database in firebase, paypal, contact with the seller, return mail
+              after purchase.
+            </StyledParagraph>
+            <StyledLinkContainer>
+              <StyledLink href="https://bicycle-shop-online-react.netlify.app/" target="_blank">
+                Live
+              </StyledLink>
+              <StyledLink href="https://github.com/EpicMari/shop_online" target="_blank">
+                Github
+              </StyledLink>
+            </StyledLinkContainer>
+          </StyledCard>
+          <StyledCard className="card">
+            <StyledProjectTitle>Movie Base</StyledProjectTitle>
+            <StyledParagraph>
+              Application using any API for learning. In the project, I also used class components
+              for their mastering, Local Storage, so that after refreshing, data such as favorite
+              movies or the page of watched movies remain as they were and movie search.
+            </StyledParagraph>
+            <StyledLinkContainer>
+              <StyledLink href="https://moviebase-react-app.netlify.app/" target="_blank">
+                Live
+              </StyledLink>
+              <StyledLink href="https://github.com/EpicMari/MovieBase" target="_blank">
+                Github
+              </StyledLink>
+            </StyledLinkContainer>
+          </StyledCard>
+          <StyledCard className="card">
+            <StyledProjectTitle>Cook Book</StyledProjectTitle>
+            <StyledParagraph>
+              My first application using any API for learning. In the project, I also used class
+              components to master them. Ability to search and add recipes to favorites.{' '}
+            </StyledParagraph>
+            <StyledLinkContainer>
+              <StyledLink href="https://cook-book-react-app.netlify.app/" target="_blank">
+                Live
+              </StyledLink>
+              <StyledLink href="https://github.com/EpicMari/cook-book" target="_blank">
+                Github
+              </StyledLink>
+            </StyledLinkContainer>
+          </StyledCard>
+        </StyledCards>
+      </StyledContainer>
+      <StyledContainerTwo></StyledContainerTwo>
+    </StyledWrapper>
   );
 };
 
