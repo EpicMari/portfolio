@@ -41,7 +41,7 @@ const SectionProjects = () => {
         pinSpacing: false,
         markers: false,
         id: 'pin',
-        end: 'max-=1900',
+        end: 'max-=2200',
         invalidateOnRefresh: true,
       });
     });

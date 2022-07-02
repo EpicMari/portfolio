@@ -2,6 +2,10 @@ import React from 'react';
 import Div from '../../atoms/Div';
 import Paragraph from '../../atoms/Paragraph';
 import Heading from '../../atoms/Heading';
+import bikeImg from '../../../assets/bike.jpg';
+import greeceImg from '../../../assets/greece.jpg';
+import snowboardImg from '../../../assets/snowboard.jpg';
+import bieszczadyImg from '../../../assets/bieszczady.jpg';
 
 import AwesomeSlider from 'react-awesome-slider';
 import withAutoplay from 'react-awesome-slider/dist/autoplay';
@@ -17,7 +21,8 @@ const AboutMe = () => {
       </Heading>
       <Div aboutMeText__text>
         <Paragraph aboutMeText__description>
-          25 years old, based in Katowice, in love hip hop, automotive, mountain bike and hiking.
+          25 years old, based in Katowice, in love hip hop, automotive, snowboard, mountain bike and
+          hiking.
         </Paragraph>
         <Paragraph aboutMeText__description>
           Self-taught, at the beginning of my career, looking for new challenges and experiences,
@@ -26,10 +31,10 @@ const AboutMe = () => {
       </Div>
       <Div aboutMeText__slider>
         <AutoplaySlider play cancelOnInteraction={false} interval={5000} bullets={false}>
-          <div data-src="/path/to/image-0.jpg" />
-          <div data-src="/path/to/image-1.jpg" />
-          <div data-src="/path/to/image-2.jpg" />
-          <div data-src="/path/to/image-3.jpg" />
+          <div data-src={bikeImg} />
+          <div data-src={greeceImg} />
+          <div data-src={snowboardImg} />
+          <div data-src={bieszczadyImg} />
         </AutoplaySlider>
       </Div>
     </Div>

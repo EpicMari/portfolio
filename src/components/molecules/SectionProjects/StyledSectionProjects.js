@@ -2,7 +2,8 @@ import styled from 'styled-components';
 
 export const StyledWrapper = styled.div`
   width: 90%;
-  padding: 20px 0;
+  max-width: 1200px;
+  padding: 40px 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -40,13 +41,13 @@ export const StyledCard = styled.div`
   justify-content: space-between;
 
   &:nth-child(1) {
-    top: 80px;
+    top: 100px;
 
     @media (orientation: landscape) {
       top: 40px;
     }
 
-    @media (min-width: ${({ theme }) => theme.devices.laptop}) and (orientation: portrait) {
+    @media (min-height: ${({ theme }) => theme.devices.laptop}) and (orientation: portrait) {
       top: 160px;
     }
 
@@ -55,11 +56,11 @@ export const StyledCard = styled.div`
     }
 
     @media (min-width: 768px) and (orientation: portrait) {
-      top: 140px;
+      top: 180px;
     }
 
-    @media (min-width: 1024px) and (orientation: landscape) {
-      top: 140px;
+    @media (min-width: 900px) and (orientation: portrait) {
+      top: 260px;
     }
 
     @media (min-width: ${({ theme }) =>
@@ -67,9 +68,23 @@ export const StyledCard = styled.div`
         theme.devices.tablet}) {
       top: 80px;
     }
+
+    @media (min-width: 1024px) and (orientation: landscape) {
+      top: 180px;
+    }
+
+    @media (min-width: ${({ theme }) => theme.devices.desktopS}) and (orientation: landscape) {
+      top: 240px;
+    }
+
+    @media (min-width: ${({ theme }) =>
+        theme.devices.tablet}) and (orientation: portrait) and (min-height: ${({ theme }) =>
+        theme.devices.laptop}) {
+      top: 200px;
+    }
   }
   &:nth-child(2) {
-    top: 100px;
+    top: 120px;
 
     @media (orientation: landscape) {
       top: 60px;
@@ -78,16 +93,21 @@ export const StyledCard = styled.div`
     @media (min-width: ${({ theme }) => theme.devices.laptop}) and (orientation: portrait) {
       top: 180px;
     }
+
     @media (min-width: ${({ theme }) => theme.devices.desktop}) and (orientation: landscape) {
       top: 160px;
     }
 
-    @media (min-width: 768px) and (orientation: portrait) {
-      top: 160px;
+    @media (min-height: ${({ theme }) => theme.devices.laptop}) and (orientation: portrait) {
+      top: 180px;
     }
 
-    @media (min-width: 1024px) and (orientation: landscape) {
-      top: 160px;
+    @media (min-width: 768px) and (orientation: portrait) {
+      top: 200px;
+    }
+
+    @media (min-width: 900px) and (orientation: portrait) {
+      top: 280px;
     }
 
     @media (min-width: ${({ theme }) =>
@@ -95,9 +115,23 @@ export const StyledCard = styled.div`
         theme.devices.tablet}) {
       top: 100px;
     }
+
+    @media (min-width: 1024px) and (orientation: landscape) {
+      top: 200px;
+    }
+
+    @media (min-width: ${({ theme }) => theme.devices.desktopS}) and (orientation: landscape) {
+      top: 260px;
+    }
+
+    @media (min-width: ${({ theme }) =>
+        theme.devices.tablet}) and (orientation: portrait) and (min-height: ${({ theme }) =>
+        theme.devices.laptop}) {
+      top: 220px;
+    }
   }
   &:nth-child(3) {
-    top: 120px;
+    top: 140px;
     @media (orientation: landscape) {
       top: 80px;
     }
@@ -110,12 +144,16 @@ export const StyledCard = styled.div`
       top: 180px;
     }
 
-    @media (min-width: 768px) and (orientation: portrait) {
-      top: 180px;
+    @media (min-height: ${({ theme }) => theme.devices.laptop}) and (orientation: portrait) {
+      top: 200px;
     }
 
-    @media (min-width: 1024px) and (orientation: landscape) {
-      top: 180px;
+    @media (min-width: 768px) and (orientation: portrait) {
+      top: 220px;
+    }
+
+    @media (min-width: 900px) and (orientation: portrait) {
+      top: 300px;
     }
 
     @media (min-width: ${({ theme }) =>
@@ -123,9 +161,24 @@ export const StyledCard = styled.div`
         theme.devices.tablet}) {
       top: 120px;
     }
+
+    @media (min-width: 1024px) and (orientation: landscape) {
+      top: 220px;
+    }
+
+    @media (min-width: ${({ theme }) => theme.devices.desktopS}) and (orientation: landscape) {
+      top: 280px;
+    }
+
+    @media (min-width: ${({ theme }) =>
+        theme.devices.tablet}) and (orientation: portrait) and (min-height: ${({ theme }) =>
+        theme.devices.laptop}) {
+      top: 240px;
+    }
   }
   &:nth-child(4) {
-    top: 140px;
+    top: 160px;
+
     @media (orientation: landscape) {
       top: 100px;
     }
@@ -133,22 +186,41 @@ export const StyledCard = styled.div`
     @media (min-width: ${({ theme }) => theme.devices.laptop}) and (orientation: portrait) {
       top: 220px;
     }
+
+    @media (min-height: ${({ theme }) => theme.devices.laptop}) and (orientation: portrait) {
+      top: 220px;
+    }
+
     @media (min-width: ${({ theme }) => theme.devices.desktop}) and (orientation: landscape) {
       top: 200px;
     }
 
     @media (min-width: 768px) and (orientation: portrait) {
-      top: 200px;
+      top: 240px;
     }
 
-    @media (min-width: 1024px) and (orientation: landscape) {
-      top: 200px;
+    @media (min-width: 900px) and (orientation: portrait) {
+      top: 320px;
     }
 
     @media (min-width: ${({ theme }) =>
         theme.devices.tablet}) and (orientation: landscape) and (min-height: ${({ theme }) =>
         theme.devices.tablet}) {
       top: 140px;
+    }
+
+    @media (min-width: 1024px) and (orientation: landscape) {
+      top: 240px;
+    }
+
+    @media (min-width: ${({ theme }) => theme.devices.desktopS}) and (orientation: landscape) {
+      top: 300px;
+    }
+
+    @media (min-width: ${({ theme }) =>
+        theme.devices.tablet}) and (orientation: portrait) and (min-height: ${({ theme }) =>
+        theme.devices.laptop}) {
+      top: 260px;
     }
   }
 
@@ -178,6 +250,10 @@ export const StyledCard = styled.div`
     height: 400px;
     padding: 10%;
   }
+  @media (min-width: 2000px) and (orientation: landscape) {
+    height: 400px;
+    padding: 10%;
+  }
 `;
 
 export const StyledParagraph = styled.p`
@@ -196,14 +272,32 @@ export const StyledParagraph = styled.p`
 export const StyledContainerTwo = styled.div`
   margin-top: 40px;
   width: 100%;
-  height: 400px;
+  height: 600px;
+
+  @media (min-height: ${({ theme }) => theme.devices.laptop}) and (orientation: portrait) {
+    height: 700px;
+  }
 
   @media (min-width: ${({ theme }) => theme.devices.laptop}) and (orientation: portrait) {
     height: 600px;
   }
 
   @media (min-width: 768px) and (orientation: portrait) {
-    height: 700px;
+    height: 800px;
+  }
+
+  @media (min-width: 1024px) and (orientation: landscape) {
+    height: 750px;
+  }
+
+  @media (min-width: ${({ theme }) =>
+      theme.devices.tablet}) and (orientation: portrait) and (min-height: ${({ theme }) =>
+      theme.devices.laptop}) {
+    height: 800px;
+  }
+
+  @media (min-width: 900px) and (orientation: portrait) {
+    height: 900px;
   }
 `;
 
