@@ -475,6 +475,7 @@ export const StyledDiv = styled.div`
       max-width: 800px;
       padding: 0 5%;
       margin: 0 auto;
+      overflow: hidden;
 
       @media (min-width: ${({ theme }) => theme.devices.desktop}) {
         max-width: 1000px;
