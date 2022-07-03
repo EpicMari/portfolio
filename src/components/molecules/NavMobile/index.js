@@ -17,7 +17,7 @@ const NavMobile = () => {
   return (
     <Div nav className="navWrapper">
       <Div className="nav__box">
-        <NavLogo closeMenu={closeMenu} />
+        <NavLogo closeMenu={closeMenu} navMobile="navMobile" />
         <Div buttonMenu>
           <Button onClick={openMenu} btnOpenMenu>
             Menu
@@ -25,7 +25,7 @@ const NavMobile = () => {
         </Div>
       </Div>
       <Div nav__menu className={menuOnOff && 'active'}>
-        <NavListLink closeMenu={closeMenu} />
+        <NavListLink closeMenu={closeMenu} navMobile="navMobile" />
       </Div>
     </Div>
   );
