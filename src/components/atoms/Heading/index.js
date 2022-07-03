@@ -16,7 +16,11 @@ const Heading = ({
   const _renderHeading = () => {
     switch (headingType) {
       case 'h1':
-        return <H1 sectionMe__jobPosition={sectionMe__jobPosition}>{children}</H1>;
+        return (
+          <H1 className={className} sectionMe__jobPosition={sectionMe__jobPosition}>
+            {children}
+          </H1>
+        );
       case 'h2':
         return (
           <H2

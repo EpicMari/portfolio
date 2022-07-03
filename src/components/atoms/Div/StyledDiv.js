@@ -511,4 +511,10 @@ export const StyledDiv = styled.div`
         }
       }
     `}
+
+    ${({ sectionMe__content }) =>
+    sectionMe__content &&
+    css`
+      overflow-wrap: anywhere;
+    `}
 `;

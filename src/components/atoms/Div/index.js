@@ -38,6 +38,7 @@ const Div = ({
   skillsDescription__descriptionContent,
   skillsDescription,
   sectionProjects__containerTwo,
+  sectionMe__content,
 }) => {
   return (
     <StyledDiv
@@ -76,6 +77,7 @@ const Div = ({
       skillsDescription__descriptionContent={skillsDescription__descriptionContent}
       skillsDescription={skillsDescription}
       sectionProjects__containerTwo={sectionProjects__containerTwo}
+      sectionMe__content={sectionMe__content}
     >
       {children}
     </StyledDiv>
