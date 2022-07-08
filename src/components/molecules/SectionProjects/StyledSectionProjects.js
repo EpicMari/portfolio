@@ -12,8 +12,12 @@ export const StyledWrapper = styled.div`
 `;
 
 export const StyledTitle = styled.h2`
-  text-align: left;
-  font-size: 2.5em;
+  text-transform: uppercase;
+  font-size: 2em;
+
+  @media (min-width: ${({ theme }) => theme.devices.laptop}) {
+    font-size: 3.5vw;
+  }
   margin-bottom: 40vh;
 `;
 

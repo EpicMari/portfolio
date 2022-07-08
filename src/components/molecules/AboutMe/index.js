@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Div from '../../atoms/Div';
 import Paragraph from '../../atoms/Paragraph';
 import Heading from '../../atoms/Heading';
@@ -7,6 +7,7 @@ import greeceImg from '../../../assets/greece.jpg';
 import snowboardImg from '../../../assets/snowboard.jpg';
 import bieszczadyImg from '../../../assets/bieszczady.jpg';
 
+import { gsap, ScrollTrigger } from 'gsap/all';
 import AwesomeSlider from 'react-awesome-slider';
 import withAutoplay from 'react-awesome-slider/dist/autoplay';
 import 'react-awesome-slider/dist/styles.css';
@@ -14,8 +15,27 @@ import 'react-awesome-slider/dist/styles.css';
 const AutoplaySlider = withAutoplay(AwesomeSlider);
 
 const AboutMe = () => {
+  useEffect(() => {
+    gsap.registerPlugin(ScrollTrigger);
+    const aboutMeElement = document.querySelector('.abouteMe');
+    gsap.fromTo(
+      aboutMeElement,
+      { y: '+=100', opacity: 0 },
+      {
+        y: 0,
+        opacity: 1,
+        stagger: 0.2,
+        duration: 1.5,
+        ease: 'easeInOut',
+        scrollTrigger: {
+          trigger: aboutMeElement,
+          start: 'top 70%',
+        },
+      },
+    );
+  }, [window.onload]);
   return (
-    <Div aboutMeText>
+    <Div className="abouteMe" aboutMeText>
       <Heading headingType="h2" sectionHeader aboutMeText__heading>
         about me
       </Heading>

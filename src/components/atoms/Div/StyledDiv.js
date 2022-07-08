@@ -193,8 +193,6 @@ export const StyledDiv = styled.div`
     ${({ sectionMe__img }) =>
     sectionMe__img &&
     css`
-      /* width: 324px;
-      height: 324px; */
       height: 40vh;
       width: 40vh;
       max-width: 300px;
@@ -274,22 +272,6 @@ export const StyledDiv = styled.div`
       }
     `}
 
-    ${({ projectsViews__wrapper }) =>
-    projectsViews__wrapper &&
-    css`
-      height: 100%;
-      padding: 40px 0;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      background-color: ${({ theme }) => theme.colors.black};
-    `}
-
-    ${({ sectionProjects }) => sectionProjects && css``}
-
-    ${({ sectionProjects__wrapper }) => sectionProjects__wrapper && css``}
-
     ${({ sectionProjects__container }) =>
     sectionProjects__container &&
     css`
@@ -303,24 +285,6 @@ export const StyledDiv = styled.div`
       margin-top: 40px;
       width: 100%;
       height: 400px;
-    `}
-
-    ${({ sectionProjects__projectsCards }) => sectionProjects__projectsCards && css``}
-
-    ${({ sectionProjects__projectsCard }) =>
-    sectionProjects__projectsCard &&
-    css`
-      /* position: absolute;
-      height: 300px;
-      width: 100%;
-      padding: 10%;
-      background-color: ${({ theme }) => theme.colors.blackGrey};
-      border: 1px solid hsla(0, 0%, 51.4%, 0.16);
-
-      &.card {
-        border-radius: 50px;
-        height: 380px;
-      } */
     `}
 
     ${({ technologies__line }) =>
@@ -394,9 +358,6 @@ export const StyledDiv = styled.div`
         grid-area: 5 / 3 / 5 / 3;
       }
     `}
-
-    ${({ contactViews }) => contactViews && css``}
-
     
     ${({ footerText }) =>
     footerText &&
@@ -461,27 +422,19 @@ export const StyledDiv = styled.div`
       );
     `}
 
-    ${({ skills }) =>
-    skills &&
-    css`
-      background-color: ${({ theme }) => theme.colors.black};
-      padding-bottom: 150px;
-    `}
-
     ${({ skillsDescription }) =>
     skillsDescription &&
     css`
+      display: grid;
+      justify-content: center;
       width: 100%;
-      max-width: 800px;
       padding: 0 5%;
       margin: 0 auto;
       overflow: hidden;
 
       @media (min-width: ${({ theme }) => theme.devices.desktop}) {
-        max-width: 1000px;
         padding: 0;
         align-items: center;
-        display: grid;
         grid-gap: 20px;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 300px 300px;

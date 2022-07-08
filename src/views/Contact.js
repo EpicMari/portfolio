@@ -1,13 +1,13 @@
 import React from 'react';
-import Div from '../components/atoms/Div';
+import Footer from '../components/atoms/Footer';
 import ContantContent from '../components/organisms/ContactContent';
 import { links } from '../utils/links';
 
 const Contact = () => {
   return (
-    <Div contactViews id={links.contact}>
+    <Footer id={links.contact}>
       <ContantContent />
-    </Div>
+    </Footer>
   );
 };
 

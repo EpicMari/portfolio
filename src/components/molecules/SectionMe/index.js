@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import Div from '../../atoms/Div';
-import Heading from '../../atoms/Heading';
 import Img from '../../atoms/Img';
+import Heading from '../../atoms/Heading';
 import img2 from '../../../assets/cvvvvvvv.jpg';
 import TextScramble from '../../../utils/scrambleText';
 
@@ -17,9 +17,8 @@ const SectionMe = () => {
       });
       counter = (counter + 1) % phrases.length;
     };
-
     next();
-  }, [window.load]);
+  }, [window.onload]);
 
   return (
     <Div sectionMe>
@@ -27,13 +26,7 @@ const SectionMe = () => {
         <Img src={img2} alt="Martin Reinicke" meImg />
       </Div>
       <Div sectionMe__content>
-        {/* <Heading headingType="h2" sectionMe__name>
-          Martin Reinicke
-        </Heading> */}
         <Heading headingType="h1" sectionMe__jobPosition className="meText"></Heading>
-        {/* <Heading headingType="h1" sectionMe__jobPosition>
-          junior frontend developer
-        </Heading> */}
       </Div>
       <Div scrollBalls>
         <Div className="scrollBalls__1"></Div>

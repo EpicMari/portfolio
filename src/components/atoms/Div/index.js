@@ -29,12 +29,10 @@ const Div = ({
   technologies__wrapper,
   technologies__line,
   technologies__card,
-  contactViews,
   footerLink,
   footerText,
   footerLink__line,
   footerLink__content,
-  skills,
   skillsDescription__descriptionContent,
   skillsDescription,
   sectionProjects__containerTwo,
@@ -68,12 +66,10 @@ const Div = ({
       technologies__wrapper={technologies__wrapper}
       technologies__line={technologies__line}
       technologies__card={technologies__card}
-      contactViews={contactViews}
       footerLink={footerLink}
       footerText={footerText}
       footerLink__line={footerLink__line}
       footerLink__content={footerLink__content}
-      skills={skills}
       skillsDescription__descriptionContent={skillsDescription__descriptionContent}
       skillsDescription={skillsDescription}
       sectionProjects__containerTwo={sectionProjects__containerTwo}

@@ -1,13 +1,13 @@
 import React from 'react';
-import Div from '../components/atoms/Div';
+import Section from '../components/atoms/Section';
 import AboutContent from '../components/organisms/AboutContent';
 import { links } from '../utils/links';
 
 const About = () => {
   return (
-    <Div className="viewsWrapper" id={links.about}>
+    <Section className="viewsWrapper" id={links.about}>
       <AboutContent />
-    </Div>
+    </Section>
   );
 };
 
