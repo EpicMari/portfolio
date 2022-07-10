@@ -10,16 +10,16 @@ export const StyledContent = styled.div`
   max-width: 1000px;
   display: grid;
   grid-template-columns: 1fr auto 1fr;
-  grid-template-rows: auto 100px 100px 100px 100px;
+  grid-template-rows: auto 100px 100px 100px 100px 100px;
   gap: 20px 10px;
   place-items: center;
   margin: 0 auto;
 `;
 
 export const StyledLine = styled.div`
-  height: 470px;
+  height: 580px;
   width: 1px;
-  grid-area: 2 / 2 / 5 / 2;
+  grid-area: 2 / 2 / 6 / 2;
   align-self: start;
   background-image: linear-gradient(
     0deg,
@@ -59,8 +59,8 @@ export const StyledCard = styled.div`
     }
   }
 
-  &.card8 {
-    grid-area: 5 / 3 / 5 / 3;
+  &.card10 {
+    grid-area: 6 / 3 / 6 / 3;
   }
 `;
 

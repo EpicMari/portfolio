@@ -7,6 +7,8 @@ import react from '../../../assets/svg/react.svg';
 import redux from '../../../assets/svg/redux.svg';
 import git from '../../../assets/svg/git.svg';
 import firebase from '../../../assets/svg/firebase.svg';
+import mui from '../../../assets/svg/mui.svg';
+import gmail from '../../../assets/svg/gmail.svg';
 import styledComponents from '../../../assets/svg/styledComponents.png';
 import {
   StyledCard,
@@ -44,7 +46,13 @@ const Technologies = () => {
           <Img alt="firebase icon" src={firebase} />
         </StyledCard>
         <StyledCard className="card8">
-          <Img alt="" src={styledComponents} />
+          <Img alt="styled components icon" src={styledComponents} />
+        </StyledCard>
+        <StyledCard className="card9">
+          <Img alt="gmail icon" src={gmail} />
+        </StyledCard>
+        <StyledCard className="card10">
+          <Img alt="mui icon" src={mui} />
         </StyledCard>
       </StyledContent>
     </StyledWrapper>
