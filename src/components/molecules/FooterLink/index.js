@@ -15,7 +15,7 @@ const FooterLink = () => {
       <StyledDecorationLine></StyledDecorationLine>
       <StyledContent>
         <StyledBoxLink>
-          <Link href="https://www.linkedin.com/" target="_blank">
+          <Link href="https://www.linkedin.com/in/martin-reinicke-b971a722b/" target="_blank">
             <StyledParagraph>LinkedIn</StyledParagraph>
           </Link>
           <Link href="https://github.com/EpicMari" target="_blank">
