@@ -1,52 +1,49 @@
 import React from 'react';
-import Div from '../../atoms/Div';
-import Li from '../../atoms/Li';
-import Ul from '../../atoms/Ul';
-import Paragraph from '../../atoms/Paragraph';
 import Link from '../../atoms/Link';
 import { links } from '../../../utils/links';
+import { StyledWrapper, StyledList, StyledListItem, StyledParagraph } from './StyledNavListLink';
 
 const NavListLink = ({ closeMenu, navMobile }) => {
   return (
-    <Div nav__content>
+    <StyledWrapper>
       {navMobile ? (
-        <Ul nav__list>
-          <Li nav__item>
+        <StyledList>
+          <StyledListItem>
             <Link linkType="linkScroll" to={links.about} onClick={() => closeMenu()}>
-              <Paragraph nav__description>About</Paragraph>
+              <StyledParagraph>About</StyledParagraph>
             </Link>
-          </Li>
-          <Li nav__item>
+          </StyledListItem>
+          <StyledListItem>
             <Link linkType="linkScroll" to={links.projects} onClick={() => closeMenu()}>
-              <Paragraph nav__description>Projects</Paragraph>
+              <StyledParagraph>Projects</StyledParagraph>
             </Link>
-          </Li>
-          <Li nav__item>
+          </StyledListItem>
+          <StyledListItem>
             <Link linkType="linkScroll" to={links.contact} onClick={() => closeMenu()}>
-              <Paragraph nav__description>Contact</Paragraph>
+              <StyledParagraph>Contact</StyledParagraph>
             </Link>
-          </Li>
-        </Ul>
+          </StyledListItem>
+        </StyledList>
       ) : (
-        <Ul nav__list>
-          <Li nav__item>
+        <StyledList>
+          <StyledListItem>
             <Link linkType="linkScroll" to={links.about}>
-              <Paragraph nav__description>About</Paragraph>
+              <StyledParagraph>About</StyledParagraph>
             </Link>
-          </Li>
-          <Li nav__item>
+          </StyledListItem>
+          <StyledListItem>
             <Link linkType="linkScroll" to={links.projects}>
-              <Paragraph nav__description>Projects</Paragraph>
+              <StyledParagraph>Projects</StyledParagraph>
             </Link>
-          </Li>
-          <Li nav__item>
+          </StyledListItem>
+          <StyledListItem>
             <Link linkType="linkScroll" to={links.contact}>
-              <Paragraph nav__description>Contact</Paragraph>
+              <StyledParagraph>Contact</StyledParagraph>
             </Link>
-          </Li>
-        </Ul>
+          </StyledListItem>
+        </StyledList>
       )}
-    </Div>
+    </StyledWrapper>
   );
 };
 

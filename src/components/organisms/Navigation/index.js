@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
-import Nav from '../../atoms/Nav';
 import NavDesktop from '../../molecules/NavDesktop';
 import NavMobile from '../../molecules/NavMobile';
+import { StyledNav } from './StyledNavigation';
 
 const Navigation = () => {
   const [toggleNav, setToggleNav] = useState();
@@ -16,7 +16,7 @@ const Navigation = () => {
     handleWidth();
     window.addEventListener('resize', handleWidth);
   }, []);
-  return <Nav>{toggleNav ? <NavMobile /> : <NavDesktop />}</Nav>;
+  return <StyledNav>{toggleNav ? <NavMobile /> : <NavDesktop />}</StyledNav>;
 };
 
 export default Navigation;

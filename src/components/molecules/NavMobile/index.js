@@ -1,8 +1,13 @@
 import React, { useState } from 'react';
 import NavLogo from '../NavLogo';
-import Button from '../../atoms/Button';
-import Div from '../../atoms/Div';
 import NavListLink from '../NavListLink';
+import {
+  StyledBoxButton,
+  StyledButton,
+  StyledContainer,
+  StyledListContainer,
+  StyledWrapper,
+} from './StyledNavMobile';
 
 const NavMobile = () => {
   const [menuOnOff, setMenuOnOff] = useState(false);
@@ -15,19 +20,17 @@ const NavMobile = () => {
     setMenuOnOff(false);
   };
   return (
-    <Div nav className="navWrapper">
-      <Div className="nav__box">
+    <StyledWrapper>
+      <StyledContainer>
         <NavLogo closeMenu={closeMenu} navMobile="navMobile" />
-        <Div buttonMenu>
-          <Button onClick={openMenu} btnOpenMenu>
-            Menu
-          </Button>
-        </Div>
-      </Div>
-      <Div nav__menu className={menuOnOff && 'active'}>
+        <StyledBoxButton>
+          <StyledButton onClick={openMenu}>Menu</StyledButton>
+        </StyledBoxButton>
+      </StyledContainer>
+      <StyledListContainer className={menuOnOff && 'active'}>
         <NavListLink closeMenu={closeMenu} navMobile="navMobile" />
-      </Div>
-    </Div>
+      </StyledListContainer>
+    </StyledWrapper>
   );
 };
 

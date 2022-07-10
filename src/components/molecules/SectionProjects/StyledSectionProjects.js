@@ -277,6 +277,7 @@ export const StyledContainerTwo = styled.div`
   margin-top: 40px;
   width: 100%;
   height: 600px;
+  /* height: 400px; */
 
   @media (min-height: ${({ theme }) => theme.devices.laptop}) and (orientation: portrait) {
     height: 700px;
@@ -291,7 +292,7 @@ export const StyledContainerTwo = styled.div`
   }
 
   @media (min-width: 1024px) and (orientation: landscape) {
-    height: 750px;
+    height: 850px;
   }
 
   @media (min-width: ${({ theme }) =>

@@ -18,6 +18,7 @@ const SectionProjects = () => {
     gsap.registerPlugin(ScrollTrigger);
 
     const cards = gsap.utils.toArray('.card');
+    const endAnimation = document.querySelector('#technologies');
 
     cards.forEach((card, index) => {
       // eslint-disable-next-line no-unused-vars
@@ -41,7 +42,8 @@ const SectionProjects = () => {
         pinSpacing: false,
         markers: false,
         id: 'pin',
-        end: 'max-=2200',
+        end: 'top-=60%',
+        endTrigger: endAnimation,
         invalidateOnRefresh: true,
       });
     });
@@ -100,7 +102,7 @@ const SectionProjects = () => {
               </StyledLink>
             </StyledLinkContainer>
           </StyledCard>
-          <StyledCard className="card">
+          <StyledCard className="card end">
             <StyledProjectTitle>Cook Book</StyledProjectTitle>
             <StyledParagraph>
               My first application using any API for learning. In the project, I also used class

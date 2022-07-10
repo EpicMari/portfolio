@@ -1,9 +1,14 @@
 import React, { useEffect } from 'react';
-import Div from '../../atoms/Div';
-import Img from '../../atoms/Img';
-import Heading from '../../atoms/Heading';
 import img2 from '../../../assets/cvvvvvvv.jpg';
 import TextScramble from '../../../utils/scrambleText';
+import {
+  StyledAnimationWrapper,
+  StyledBoxImg,
+  StyledContentScrableText,
+  StyledHeader,
+  StyledImg,
+  StyledWrapper,
+} from './StyledSectionMe';
 
 const SectionMe = () => {
   useEffect(() => {
@@ -21,19 +26,19 @@ const SectionMe = () => {
   }, [window.onload]);
 
   return (
-    <Div sectionMe>
-      <Div sectionMe__img>
-        <Img src={img2} alt="Martin Reinicke" meImg />
-      </Div>
-      <Div sectionMe__content>
-        <Heading headingType="h1" sectionMe__jobPosition className="meText"></Heading>
-      </Div>
-      <Div scrollBalls>
-        <Div className="scrollBalls__1"></Div>
-        <Div className="scrollBalls__2"></Div>
-        <Div className="scrollBalls__3"></Div>
-      </Div>
-    </Div>
+    <StyledWrapper>
+      <StyledBoxImg>
+        <StyledImg src={img2} alt="Martin Reinicke" />
+      </StyledBoxImg>
+      <StyledContentScrableText>
+        <StyledHeader className="meText"></StyledHeader>
+      </StyledContentScrableText>
+      <StyledAnimationWrapper>
+        <div className="scrollBalls__1"></div>
+        <div className="scrollBalls__2"></div>
+        <div className="scrollBalls__3"></div>
+      </StyledAnimationWrapper>
+    </StyledWrapper>
   );
 };
 

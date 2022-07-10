@@ -1,8 +1,6 @@
 import React, { useEffect, useRef } from 'react';
-import Div from '../../atoms/Div';
-import Paragraph from '../../atoms/Paragraph';
 import { gsap, ScrollTrigger } from 'gsap/all';
-import { StyledCard } from './StyledSkillsDescription';
+import { StyledCard, StyledParagraph, StyledWrapper } from './StyledSkillsDescription';
 
 const SkillsDescription = () => {
   const cardOne = useRef(null);
@@ -47,22 +45,22 @@ const SkillsDescription = () => {
   }, [window.onload]);
 
   return (
-    <Div skillsDescription>
+    <StyledWrapper>
       <StyledCard ref={cardOne}>
-        <Paragraph skillsDescription__description>
+        <StyledParagraph>
           My first contact with programming was in a technical school where I create my first pages.
           They were very poor and relied only on html and css. However, at that time I was already
           impressed with the functions of css and its ability to manipulate elements.
-        </Paragraph>
+        </StyledParagraph>
       </StyledCard>
       <StyledCard ref={cardTwo}>
-        <Paragraph skillsDescription__description>
+        <StyledParagraph>
           After an unsuccessful romance with Python. Years later, I returned to frontend and React
           technology. This is what I liked and I would like to develop in it both privately and
           professionally.
-        </Paragraph>
+        </StyledParagraph>
       </StyledCard>
-    </Div>
+    </StyledWrapper>
   );
 };
 

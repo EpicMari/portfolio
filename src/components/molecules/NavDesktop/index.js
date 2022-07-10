@@ -1,16 +1,16 @@
 import React from 'react';
-import Div from '../../atoms/Div';
 import NavListLink from '../NavListLink';
 import NavLogo from '../NavLogo';
+import { StyledContent, StyledWrapper } from './StyledNavDesktop';
 
 const NavDesktop = () => {
   return (
-    <Div navDesktop className="navWrapper">
-      <Div className="nav__box">
+    <StyledWrapper>
+      <StyledContent>
         <NavLogo />
         <NavListLink />
-      </Div>
-    </Div>
+      </StyledContent>
+    </StyledWrapper>
   );
 };
 

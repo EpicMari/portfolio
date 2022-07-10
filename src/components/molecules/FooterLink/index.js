@@ -1,24 +1,30 @@
 import React from 'react';
-import Div from '../../atoms/Div';
 import Link from '../../atoms/Link';
-import Paragraph from '../../atoms/Paragraph';
+import {
+  StyledBoxLink,
+  StyledContent,
+  StyledDecorationLine,
+  StyledNameSurname,
+  StyledParagraph,
+  StyledWrapper,
+} from './StyledFooterLink';
 
 const FooterLink = () => {
   return (
-    <Div footerLink>
-      <Div footerLink__line className="line__decoration"></Div>
-      <Div footerLink__content>
-        <Div>
+    <StyledWrapper>
+      <StyledDecorationLine></StyledDecorationLine>
+      <StyledContent>
+        <StyledBoxLink>
           <Link href="https://www.linkedin.com/" target="_blank">
-            <Paragraph footerLink__link>LinkedIn</Paragraph>
+            <StyledParagraph>LinkedIn</StyledParagraph>
           </Link>
           <Link href="https://github.com/EpicMari" target="_blank">
-            <Paragraph footerLink__link>GitHub</Paragraph>
+            <StyledParagraph>GitHub</StyledParagraph>
           </Link>
-        </Div>
-        <Paragraph footerLink__me>martin reinicke 2021 ©</Paragraph>
-      </Div>
-    </Div>
+        </StyledBoxLink>
+        <StyledNameSurname>martin reinicke 2022 ©</StyledNameSurname>
+      </StyledContent>
+    </StyledWrapper>
   );
 };
 

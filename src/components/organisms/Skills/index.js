@@ -1,14 +1,14 @@
 import React from 'react';
-import Section from '../../atoms/Section';
 import SkillsDescription from '../../molecules/SkillsDescription';
 import Technologies from '../../molecules/Technologies';
+import { StyledSection } from './StyledSkills';
 
 const Skills = () => {
   return (
-    <Section skills>
+    <StyledSection id="technologies">
       <Technologies />
       <SkillsDescription />
-    </Section>
+    </StyledSection>
   );
 };
 
